@@ -1,6 +1,6 @@
 CC = mpicc
 RM = /bin/rm
-PROG = mm mm_abft lu
+PROG = mm mm_abft lu lu_abft
 CFLAGS = -lm -lz
 
 DIR_SRC = ./src
@@ -22,6 +22,10 @@ ${DIR_BIN}/mm_abft : ${DIR_MM}/mm_abft.c ${LIB_ABFT}
 lu : ${DIR_BIN}/lu
 ${DIR_BIN}/lu : ${DIR_LU}/lu.c 
 	${CC} -o $@ $< ${CFLAGS}
+
+lu_abft : ${DIR_BIN}/lu_abft
+${DIR_BIN}/lu_abft : ${DIR_LU}/lu_abft.c ${LIB_ABFT}
+	${CC} -o $@ $^ ${CFLAGS}
 
 clean :
 	${RM} -f ${DIR_BIN}/*
