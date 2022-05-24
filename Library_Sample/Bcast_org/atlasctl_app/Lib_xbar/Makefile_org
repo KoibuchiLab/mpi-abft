@@ -1,0 +1,28 @@
+#Makefile for atlasctl
+
+CC=mpicc
+GCCVERSION:=$(shell $(CC) -dumpversion)
+dot:=.
+empty:=
+space:=$(empty) $(empty)
+GCCVERSION:=$(subst $(dot),$(space), $(GCCVERSION))
+GCCMAJOR:=$(word 1, $(GCCVERSION))
+GCCMINOR:=$(word 2, $(GCCVERSION))
+
+ifeq (1,$(shell expr $(GCCMAJOR) \>= 4))
+  OPT=-O2 -g
+  CFLAGS=$(OPT) -Wall -W -Wno-pointer-sign -Wno-parentheses -Wstrict-prototypes -Werror -pthread
+else
+  OPT=-O2 -g
+  CFLAGS=$(OPT) -Wall -W -Wno-parentheses -Wstrict-prototypes -Werror -pthread
+endif
+
+LIBS= -lm -L/usr/local/lib
+
+PREFIX=.
+
+atlasctl: Xbar_SR.c atlasctl.h nec_atlas_if.h 
+	$(CC) $(CFLAGS) -o Xbar_SR Xbar_SR.c $(LIBS) 
+
+clean:
+	rm -f Xbar_SR

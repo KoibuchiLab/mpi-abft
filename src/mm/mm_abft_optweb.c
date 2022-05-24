@@ -9,6 +9,7 @@
 #include <math.h>
 #include <time.h>
 #include <unistd.h>
+#include "abft.h" // relative to this file
 #include "Lib_xbar/Xbar_SR.h"
 
 typedef struct {
@@ -152,7 +153,7 @@ int main(int argc, char *argv[]) {
     }
 
     // send the matrix properties to the workers
-    OPTWEB_MPI_Bcast(&matrix_properties[0], 4, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast(&matrix_properties, 4, MPI_INT, 0, MPI_COMM_WORLD);
 
     // calculate the 1D-sizes of the matrices
     int size_a   = matrix_properties[0] * matrix_properties[1];
@@ -166,11 +167,12 @@ int main(int argc, char *argv[]) {
         m_a = malloc( size_a * sizeof(int) );
         m_b = malloc( size_b * sizeof(int) );
     }
+ 
+    //int resent = 0;
     
     // send 1D matrices to workers
-    MPI_Bcast(m_a, size_a , MPI_INT, 0, MPI_COMM_WORLD);
-    MPI_Bcast(m_b, size_b , MPI_INT, 0, MPI_COMM_WORLD);
-
+    MPI_Bcast_abft(m_a, size_a, 0, rank, num_worker); //, &resent);
+    MPI_Bcast_abft(m_b, size_b, 0, rank, num_worker); //, &resent); 
     
     // calculate the start- and endrow for worker  
     int startrow = rank * ( matrix_properties[0] / num_worker);
@@ -197,13 +199,13 @@ int main(int argc, char *argv[]) {
     free(m_b);
     
     /* collect the results */
-    OPTWEB_MPI_Gather(result_matrix, number_of_rows, MPI_INT,
+    MPI_Gather(result_matrix, number_of_rows, MPI_INT,
            final_matrix, number_of_rows,  MPI_INT, 0, MPI_COMM_WORLD);
 
     /** The master presents the results on the console */
     if (rank == 0){
 
-        FILE* fp = fopen("mat_result.txt", "w");
+        FILE* fp = fopen("mat_result.txt", "w"); // relative to runtime environment (current directory)
 
         int size = matrix_properties[0] * matrix_properties[3];
         int i = 0;

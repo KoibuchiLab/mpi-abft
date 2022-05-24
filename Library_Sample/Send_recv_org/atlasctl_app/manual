@@ -1,0 +1,1 @@
+mpirun -np 8 -H asus05,asus06,asus07,asus08,asus09,asus10,asus11,asus12  -mca btl openib,self ./atlasctl  64  0 1

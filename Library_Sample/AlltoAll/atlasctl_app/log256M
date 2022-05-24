@@ -1,0 +1,800 @@
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:1
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:2
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:6
+End Alltoall rank:4
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:2
+End Alltoall rank:5
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:0
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:4
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+End Alltoall rank:3
+End Alltoall rank:6
+End Alltoall rank:1
+End Alltoall rank:2
+End Alltoall rank:0
+End Alltoall rank:5
+End Alltoall rank:7
+End Alltoall rank:4
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:4
+End Alltoall rank:1
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:6
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:1
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:6
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:7
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:2
+End Alltoall rank:6
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:2
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:4
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:5
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:6
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:7
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:6
+End Alltoall rank:1
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:4
+End Alltoall rank:1
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+End Alltoall rank:7
+End Alltoall rank:2
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:6
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:1
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:1
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:4
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:5
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:7
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:5
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:3
+End Alltoall rank:1
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:6
+End Alltoall rank:4
+End Alltoall rank:2
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:1
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:1
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:7
+End Alltoall rank:0
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:5
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:7
+End Alltoall rank:0
+End Alltoall rank:2
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:3
+End Alltoall rank:6
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:5
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:7
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:7
+End Alltoall rank:1
+End Alltoall rank:2
+End Alltoall rank:5
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:5
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:4
+End Alltoall rank:0
+End Alltoall rank:1
+End Alltoall rank:3
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:1
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:1
+End Alltoall rank:5
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:5
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:4
+End Alltoall rank:3
+End Alltoall rank:1
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:3
+End Alltoall rank:6
+End Alltoall rank:2
+End Alltoall rank:4
+End Alltoall rank:0
+End Alltoall rank:3
+End Alltoall rank:1
+End Alltoall rank:7
+End Alltoall rank:5
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:7
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+End Alltoall rank:4
+End Alltoall rank:6
+End Alltoall rank:7
+End Alltoall rank:2
+End Alltoall rank:0
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:7
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:4
+End Alltoall rank:1
+End Alltoall rank:6
+End Alltoall rank:0
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:7
+End Alltoall rank:4
+End Alltoall rank:3
+End Alltoall rank:0
+End Alltoall rank:5
+End Alltoall rank:1
+End Alltoall rank:7
+End Alltoall rank:6
+End Alltoall rank:2
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:7
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:7
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:2
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:7
+End Alltoall rank:3
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:2
+End Alltoall rank:6
+End Alltoall rank:7
+End Alltoall rank:0
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:7
+End Alltoall rank:6
+End Alltoall rank:7
+End Alltoall rank:3
+End Alltoall rank:5
+End Alltoall rank:0
+End Alltoall rank:2
+End Alltoall rank:4
+End Alltoall rank:1
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:6
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+End Alltoall rank:4
+End Alltoall rank:7
+End Alltoall rank:5
+End Alltoall rank:6
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:1
+End Alltoall rank:0
+Start Alltoall Size:268435456Byte rank:0
+Start Alltoall Size:268435456Byte rank:1
+Start Alltoall Size:268435456Byte rank:4
+Start Alltoall Size:268435456Byte rank:3
+Start Alltoall Size:268435456Byte rank:5
+Start Alltoall Size:268435456Byte rank:7
+Start Alltoall Size:268435456Byte rank:2
+Start Alltoall Size:268435456Byte rank:6
+End Alltoall rank:7
+End Alltoall rank:3
+End Alltoall rank:2
+End Alltoall rank:4
+End Alltoall rank:5
+End Alltoall rank:6
+End Alltoall rank:1
+End Alltoall rank:0
