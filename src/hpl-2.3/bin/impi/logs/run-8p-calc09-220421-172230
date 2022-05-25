@@ -1,0 +1,80 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.5  Build 20211102 (id: 9279b7d62)
+[0] MPI startup(): Copyright (C) 2003-2021 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.13.2rc1-impi
+[0] MPI startup(): libfabric provider: mlx
+[0] MPI startup(): File "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi_mlx_10.dat" not found
+[0] MPI startup(): Load tuning file: "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi.dat"
+[1] MPI startup(): global_rank 1, local_rank 0, local_size 1, threads_per_node 1
+[3] MPI startup(): global_rank 3, local_rank 0, local_size 1, threads_per_node 1
+[calc11:23622:0:23622] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x150)
+==== backtrace ====
+    0  /usr/lib64/libucs.so.0(+0x17970) [0x7f7e5955c970]
+    1  /usr/lib64/libucs.so.0(+0x17b22) [0x7f7e5955cb22]
+    2  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x66c437) [0x7f7e5f92b437]
+    3  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x5255c9) [0x7f7e5f7e45c9]
+    4  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x52a1e1) [0x7f7e5f7e91e1]
+    5  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(MPI_Init+0xcb) [0x7f7e5f7e871b]
+    6  ./xhpl() [0x40326f]
+    7  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7f7e5e3d2555]
+    8  ./xhpl() [0x403129]
+===================
+[5] MPI startup(): global_rank 5, local_rank 0, local_size 1, threads_per_node 1
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       27468    calc09     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 1       24602    calc10     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 2       23622    calc11     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 3       22710    calc12     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 4       22807    calc13     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 5       22828    calc14     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 6       22883    calc15     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 7       23235    calc16     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[calc09:27468:0:27468] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x150)
+==== backtrace ====
+[calc15:22883:0:22883] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x150)
+==== backtrace ====
+[7] MPI startup(): global_rank 7, local_rank 0, local_size 1, threads_per_node 1
+[calc13:22807:0:22807] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x150)
+==== backtrace ====
+    0  /usr/lib64/libucs.so.0(+0x17970) [0x7f5f67488970]
+    1  /usr/lib64/libucs.so.0(+0x17b22) [0x7f5f67488b22]
+    2  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x66c437) [0x7f5f6d857437]
+    3  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x5255c9) [0x7f5f6d7105c9]
+    4  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x52a1e1) [0x7f5f6d7151e1]
+    5  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(MPI_Init+0xcb) [0x7f5f6d71471b]
+    6  ./xhpl() [0x40326f]
+    7  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7f5f6c2fe555]
+    8  ./xhpl() [0x403129]
+===================
+    0  /usr/lib64/libucs.so.0(+0x17970) [0x7fb6b264c970]
+    1  /usr/lib64/libucs.so.0(+0x17b22) [0x7fb6b264cb22]
+    2  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x66c437) [0x7fb6b8a1b437]
+    3  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x5255c9) [0x7fb6b88d45c9]
+    4  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x52a1e1) [0x7fb6b88d91e1]
+    0  /usr/lib64/libucs.so.0(+0x17970) [0x7ff21b983970]
+    1  /usr/lib64/libucs.so.0(+0x17b22) [0x7ff21b983b22]
+    2  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x66c437) [0x7ff221d52437]
+    3  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x5255c9) [0x7ff221c0b5c9]
+    4  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(+0x52a1e1) [0x7ff221c101e1]
+    5  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(MPI_Init+0xcb) [0x7ff221c0f71b]
+    5  /home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1//lib/release_mt/libmpi.so.12(MPI_Init+0xcb) [0x7fb6b88d871b]
+    6  ./xhpl() [0x40326f]
+    7  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7fb6b74c2555]
+    8  ./xhpl() [0x403129]
+===================
+    6  ./xhpl() [0x40326f]
+    7  /lib64/libc.so.6(__libc_start_main+0xf5) [0x7ff2207f9555]
+    8  ./xhpl() [0x403129]
+===================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 22807 RUNNING AT calc13
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 27468 RUNNING AT calc09
+=   KILLED BY SIGNAL: 11 (Segmentation fault)
+===================================================================================

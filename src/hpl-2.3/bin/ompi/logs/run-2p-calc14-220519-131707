@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------
+At least one pair of MPI processes are unable to reach each other for
+MPI communications.  This means that no Open MPI device has indicated
+that it can be used to communicate between these processes.  This is
+an error; Open MPI requires that all MPI processes be able to reach
+each other.  This error can sometimes be the result of forgetting to
+specify the "self" BTL.
+
+  Process 1 ([[31459,1],1]) is on host: calc15
+  Process 2 ([[31459,1],0]) is on host: calc14
+  BTLs attempted: openib
+
+Your MPI job is now going to abort; sorry.
+--------------------------------------------------------------------------
+[calc15:09985] *** An error occurred in MPI_Send
+[calc15:09985] *** reported by process [2061697025,1]
+[calc15:09985] *** on communicator MPI_COMM_WORLD
+[calc15:09985] *** MPI_ERR_INTERN: internal error
+[calc15:09985] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[calc15:09985] ***    and potentially your MPI job)

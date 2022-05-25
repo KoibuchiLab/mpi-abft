@@ -1,0 +1,37 @@
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              calc14
+  Local adapter:           mlx5_1
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   calc14
+  Local device: mlx5_1
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+At least one pair of MPI processes are unable to reach each other for
+MPI communications.  This means that no Open MPI device has indicated
+that it can be used to communicate between these processes.  This is
+an error; Open MPI requires that all MPI processes be able to reach
+each other.  This error can sometimes be the result of forgetting to
+specify the "self" BTL.
+
+  Process 1 ([[31326,1],1]) is on host: calc15
+  Process 2 ([[31326,1],0]) is on host: calc14
+  BTLs attempted: self tcp
+
+Your MPI job is now going to abort; sorry.
+--------------------------------------------------------------------------
+[calc15:09910] *** An error occurred in MPI_Send
+[calc15:09910] *** reported by process [2052980737,1]
+[calc15:09910] *** on communicator MPI_COMM_WORLD
+[calc15:09910] *** MPI_ERR_INTERN: internal error
+[calc15:09910] *** MPI_ERRORS_ARE_FATAL (processes in this communicator will now abort,
+[calc15:09910] ***    and potentially your MPI job)

@@ -1,0 +1,1483 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.5  Build 20211102 (id: 9279b7d62)
+[0] MPI startup(): Copyright (C) 2003-2021 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.7.2
+[0] MPI startup(): used libfabric version support is deprecated. Please use Libfabricv1.9 or above
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Load tuning file: "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi_tcp-ofi-rxm.dat"
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       6471     calc16     {0,1,2,3,4,5,6,7,8,9}
+[0] MPI startup(): 1       6419     calc15     {0,1,2,3,4,5,6,7,8,9}
+[0] MPI startup(): I_MPI_LIBRARY_KIND=release_mt
+[0] MPI startup(): I_MPI_ROOT=/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_PIN_DOMAIN=auto
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_DEBUG=10
+[0] MPI startup(): threading: mode: direct
+[0] MPI startup(): threading: vcis: 1
+[0] MPI startup(): threading: app_threads: 1
+[0] MPI startup(): threading: runtime: generic
+[0] MPI startup(): threading: is_threaded: 0
+[0] MPI startup(): threading: async_progress: 0
+[0] MPI startup(): threading: num_pools: 64
+[0] MPI startup(): threading: lock_level: global
+[0] MPI startup(): threading: enable_sep: 0
+[0] MPI startup(): threading: direct_recv: 1
+[0] MPI startup(): threading: zero_op_flags: 0
+[0] MPI startup(): threading: num_am_buffers: 8
+[0] MPI startup(): threading: library is built with per-vci thread granularity
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :  100000 
+NB     :     256      288      320      352 
+PMAP   : Row-major process mapping
+P      :       1 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       1 
+SWAP   : Mix (threshold = 64)
+L1     : no-transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               2.220446e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Column=000000256 Fraction= 0.3% Gflops=1.610e+04
+Column=000000512 Fraction= 0.5% Gflops=1.055e+03
+Column=000000768 Fraction= 0.8% Gflops=7.998e+02
+Column=000001024 Fraction= 1.0% Gflops=7.170e+02
+Column=000001280 Fraction= 1.3% Gflops=6.718e+02
+Column=000001536 Fraction= 1.5% Gflops=6.472e+02
+Column=000001792 Fraction= 1.8% Gflops=6.292e+02
+Column=000002048 Fraction= 2.0% Gflops=6.176e+02
+Column=000002304 Fraction= 2.3% Gflops=6.078e+02
+Column=000002560 Fraction= 2.6% Gflops=6.010e+02
+Column=000002816 Fraction= 2.8% Gflops=5.945e+02
+Column=000003072 Fraction= 3.1% Gflops=5.902e+02
+Column=000003328 Fraction= 3.3% Gflops=5.858e+02
+Column=000003584 Fraction= 3.6% Gflops=5.828e+02
+Column=000003840 Fraction= 3.8% Gflops=5.796e+02
+Column=000004096 Fraction= 4.1% Gflops=5.774e+02
+Column=000004352 Fraction= 4.4% Gflops=5.749e+02
+Column=000004608 Fraction= 4.6% Gflops=5.733e+02
+Column=000004864 Fraction= 4.9% Gflops=5.713e+02
+Column=000005120 Fraction= 5.1% Gflops=5.700e+02
+Column=000005376 Fraction= 5.4% Gflops=5.683e+02
+Column=000005632 Fraction= 5.6% Gflops=5.672e+02
+Column=000005888 Fraction= 5.9% Gflops=5.659e+02
+Column=000006144 Fraction= 6.1% Gflops=5.650e+02
+Column=000006400 Fraction= 6.4% Gflops=5.638e+02
+Column=000006656 Fraction= 6.7% Gflops=5.631e+02
+Column=000006912 Fraction= 6.9% Gflops=5.620e+02
+Column=000007168 Fraction= 7.2% Gflops=5.614e+02
+Column=000007424 Fraction= 7.4% Gflops=5.605e+02
+Column=000007680 Fraction= 7.7% Gflops=5.600e+02
+Column=000007936 Fraction= 7.9% Gflops=5.592e+02
+Column=000008192 Fraction= 8.2% Gflops=5.588e+02
+Column=000008448 Fraction= 8.4% Gflops=5.581e+02
+Column=000008704 Fraction= 8.7% Gflops=5.577e+02
+Column=000008960 Fraction= 9.0% Gflops=5.571e+02
+Column=000009216 Fraction= 9.2% Gflops=5.568e+02
+Column=000009472 Fraction= 9.5% Gflops=5.562e+02
+Column=000009728 Fraction= 9.7% Gflops=5.559e+02
+Column=000009984 Fraction=10.0% Gflops=5.554e+02
+Column=000010240 Fraction=10.2% Gflops=5.551e+02
+Column=000010496 Fraction=10.5% Gflops=5.546e+02
+Column=000010752 Fraction=10.8% Gflops=5.543e+02
+Column=000011008 Fraction=11.0% Gflops=5.539e+02
+Column=000011264 Fraction=11.3% Gflops=5.536e+02
+Column=000011520 Fraction=11.5% Gflops=5.532e+02
+Column=000011776 Fraction=11.8% Gflops=5.530e+02
+Column=000012032 Fraction=12.0% Gflops=5.525e+02
+Column=000012288 Fraction=12.3% Gflops=5.524e+02
+Column=000012544 Fraction=12.5% Gflops=5.520e+02
+Column=000012800 Fraction=12.8% Gflops=5.519e+02
+Column=000013056 Fraction=13.1% Gflops=5.516e+02
+Column=000013312 Fraction=13.3% Gflops=5.514e+02
+Column=000013568 Fraction=13.6% Gflops=5.511e+02
+Column=000013824 Fraction=13.8% Gflops=5.510e+02
+Column=000014080 Fraction=14.1% Gflops=5.507e+02
+Column=000014336 Fraction=14.3% Gflops=5.506e+02
+Column=000014592 Fraction=14.6% Gflops=5.503e+02
+Column=000014848 Fraction=14.8% Gflops=5.502e+02
+Column=000015104 Fraction=15.1% Gflops=5.499e+02
+Column=000015360 Fraction=15.4% Gflops=5.498e+02
+Column=000015616 Fraction=15.6% Gflops=5.495e+02
+Column=000015872 Fraction=15.9% Gflops=5.494e+02
+Column=000016128 Fraction=16.1% Gflops=5.492e+02
+Column=000016384 Fraction=16.4% Gflops=5.491e+02
+Column=000016640 Fraction=16.6% Gflops=5.489e+02
+Column=000016896 Fraction=16.9% Gflops=5.488e+02
+Column=000017152 Fraction=17.2% Gflops=5.486e+02
+Column=000017408 Fraction=17.4% Gflops=5.485e+02
+Column=000017664 Fraction=17.7% Gflops=5.483e+02
+Column=000017920 Fraction=17.9% Gflops=5.482e+02
+Column=000018176 Fraction=18.2% Gflops=5.480e+02
+Column=000018432 Fraction=18.4% Gflops=5.479e+02
+Column=000018688 Fraction=18.7% Gflops=5.478e+02
+Column=000018944 Fraction=18.9% Gflops=5.477e+02
+Column=000019200 Fraction=19.2% Gflops=5.475e+02
+Column=000019456 Fraction=19.5% Gflops=5.474e+02
+Column=000019712 Fraction=19.7% Gflops=5.472e+02
+Column=000019968 Fraction=20.0% Gflops=5.471e+02
+Column=000020224 Fraction=20.2% Gflops=5.470e+02
+Column=000020480 Fraction=20.5% Gflops=5.469e+02
+Column=000020736 Fraction=20.7% Gflops=5.467e+02
+Column=000020992 Fraction=21.0% Gflops=5.467e+02
+Column=000021248 Fraction=21.2% Gflops=5.465e+02
+Column=000021504 Fraction=21.5% Gflops=5.465e+02
+Column=000021760 Fraction=21.8% Gflops=5.463e+02
+Column=000022016 Fraction=22.0% Gflops=5.463e+02
+Column=000022272 Fraction=22.3% Gflops=5.461e+02
+Column=000022528 Fraction=22.5% Gflops=5.461e+02
+Column=000022784 Fraction=22.8% Gflops=5.459e+02
+Column=000023040 Fraction=23.0% Gflops=5.459e+02
+Column=000023296 Fraction=23.3% Gflops=5.457e+02
+Column=000023552 Fraction=23.6% Gflops=5.456e+02
+Column=000023808 Fraction=23.8% Gflops=5.455e+02
+Column=000024064 Fraction=24.1% Gflops=5.454e+02
+Column=000024320 Fraction=24.3% Gflops=5.453e+02
+Column=000024576 Fraction=24.6% Gflops=5.453e+02
+Column=000024832 Fraction=24.8% Gflops=5.451e+02
+Column=000025088 Fraction=25.1% Gflops=5.451e+02
+Column=000025344 Fraction=25.3% Gflops=5.450e+02
+Column=000025600 Fraction=25.6% Gflops=5.449e+02
+Column=000025856 Fraction=25.9% Gflops=5.448e+02
+Column=000026112 Fraction=26.1% Gflops=5.447e+02
+Column=000026368 Fraction=26.4% Gflops=5.446e+02
+Column=000026624 Fraction=26.6% Gflops=5.446e+02
+Column=000026880 Fraction=26.9% Gflops=5.444e+02
+Column=000027136 Fraction=27.1% Gflops=5.444e+02
+Column=000027392 Fraction=27.4% Gflops=5.443e+02
+Column=000027648 Fraction=27.6% Gflops=5.442e+02
+Column=000027904 Fraction=27.9% Gflops=5.441e+02
+Column=000028160 Fraction=28.2% Gflops=5.441e+02
+Column=000028416 Fraction=28.4% Gflops=5.440e+02
+Column=000028672 Fraction=28.7% Gflops=5.439e+02
+Column=000028928 Fraction=28.9% Gflops=5.438e+02
+Column=000029184 Fraction=29.2% Gflops=5.437e+02
+Column=000029440 Fraction=29.4% Gflops=5.436e+02
+Column=000029696 Fraction=29.7% Gflops=5.436e+02
+Column=000029952 Fraction=30.0% Gflops=5.434e+02
+Column=000030208 Fraction=30.2% Gflops=5.434e+02
+Column=000030464 Fraction=30.5% Gflops=5.433e+02
+Column=000030720 Fraction=30.7% Gflops=5.433e+02
+Column=000030976 Fraction=31.0% Gflops=5.431e+02
+Column=000031232 Fraction=31.2% Gflops=5.431e+02
+Column=000031488 Fraction=31.5% Gflops=5.430e+02
+Column=000031744 Fraction=31.7% Gflops=5.430e+02
+Column=000032000 Fraction=32.0% Gflops=5.429e+02
+Column=000032256 Fraction=32.3% Gflops=5.428e+02
+Column=000032512 Fraction=32.5% Gflops=5.427e+02
+Column=000032768 Fraction=32.8% Gflops=5.427e+02
+Column=000033024 Fraction=33.0% Gflops=5.426e+02
+Column=000033280 Fraction=33.3% Gflops=5.425e+02
+Column=000033536 Fraction=33.5% Gflops=5.424e+02
+Column=000033792 Fraction=33.8% Gflops=5.424e+02
+Column=000034048 Fraction=34.0% Gflops=5.423e+02
+Column=000034304 Fraction=34.3% Gflops=5.423e+02
+Column=000034560 Fraction=34.6% Gflops=5.422e+02
+Column=000034816 Fraction=34.8% Gflops=5.421e+02
+Column=000035072 Fraction=35.1% Gflops=5.420e+02
+Column=000035328 Fraction=35.3% Gflops=5.420e+02
+Column=000035584 Fraction=35.6% Gflops=5.419e+02
+Column=000035840 Fraction=35.8% Gflops=5.419e+02
+Column=000036096 Fraction=36.1% Gflops=5.418e+02
+Column=000036352 Fraction=36.4% Gflops=5.418e+02
+Column=000036608 Fraction=36.6% Gflops=5.417e+02
+Column=000036864 Fraction=36.9% Gflops=5.416e+02
+Column=000037120 Fraction=37.1% Gflops=5.415e+02
+Column=000037376 Fraction=37.4% Gflops=5.415e+02
+Column=000037632 Fraction=37.6% Gflops=5.414e+02
+Column=000037888 Fraction=37.9% Gflops=5.414e+02
+Column=000038144 Fraction=38.1% Gflops=5.413e+02
+Column=000038400 Fraction=38.4% Gflops=5.413e+02
+Column=000038656 Fraction=38.7% Gflops=5.412e+02
+Column=000038912 Fraction=38.9% Gflops=5.411e+02
+Column=000039168 Fraction=39.2% Gflops=5.410e+02
+Column=000039424 Fraction=39.4% Gflops=5.410e+02
+Column=000039680 Fraction=39.7% Gflops=5.409e+02
+Column=000039936 Fraction=39.9% Gflops=5.409e+02
+Column=000040192 Fraction=40.2% Gflops=5.408e+02
+Column=000040448 Fraction=40.4% Gflops=5.408e+02
+Column=000040704 Fraction=40.7% Gflops=5.407e+02
+Column=000040960 Fraction=41.0% Gflops=5.407e+02
+Column=000041216 Fraction=41.2% Gflops=5.406e+02
+Column=000041472 Fraction=41.5% Gflops=5.405e+02
+Column=000041728 Fraction=41.7% Gflops=5.405e+02
+Column=000041984 Fraction=42.0% Gflops=5.404e+02
+Column=000042240 Fraction=42.2% Gflops=5.404e+02
+Column=000042496 Fraction=42.5% Gflops=5.403e+02
+Column=000042752 Fraction=42.8% Gflops=5.402e+02
+Column=000043008 Fraction=43.0% Gflops=5.402e+02
+Column=000043264 Fraction=43.3% Gflops=5.401e+02
+Column=000043520 Fraction=43.5% Gflops=5.401e+02
+Column=000043776 Fraction=43.8% Gflops=5.400e+02
+Column=000044032 Fraction=44.0% Gflops=5.400e+02
+Column=000044288 Fraction=44.3% Gflops=5.399e+02
+Column=000044544 Fraction=44.5% Gflops=5.399e+02
+Column=000044800 Fraction=44.8% Gflops=5.398e+02
+Column=000045056 Fraction=45.1% Gflops=5.398e+02
+Column=000045312 Fraction=45.3% Gflops=5.397e+02
+Column=000045568 Fraction=45.6% Gflops=5.396e+02
+Column=000045824 Fraction=45.8% Gflops=5.396e+02
+Column=000046080 Fraction=46.1% Gflops=5.395e+02
+Column=000046336 Fraction=46.3% Gflops=5.395e+02
+Column=000046592 Fraction=46.6% Gflops=5.394e+02
+Column=000046848 Fraction=46.8% Gflops=5.394e+02
+Column=000047104 Fraction=47.1% Gflops=5.393e+02
+Column=000047360 Fraction=47.4% Gflops=5.393e+02
+Column=000047616 Fraction=47.6% Gflops=5.392e+02
+Column=000047872 Fraction=47.9% Gflops=5.392e+02
+Column=000048128 Fraction=48.1% Gflops=5.391e+02
+Column=000048384 Fraction=48.4% Gflops=5.390e+02
+Column=000048640 Fraction=48.6% Gflops=5.390e+02
+Column=000048896 Fraction=48.9% Gflops=5.390e+02
+Column=000049152 Fraction=49.2% Gflops=5.389e+02
+Column=000049408 Fraction=49.4% Gflops=5.389e+02
+Column=000049664 Fraction=49.7% Gflops=5.388e+02
+Column=000049920 Fraction=49.9% Gflops=5.387e+02
+Column=000050176 Fraction=50.2% Gflops=5.387e+02
+Column=000050432 Fraction=50.4% Gflops=5.386e+02
+Column=000050688 Fraction=50.7% Gflops=5.386e+02
+Column=000050944 Fraction=50.9% Gflops=5.385e+02
+Column=000051200 Fraction=51.2% Gflops=5.385e+02
+Column=000051456 Fraction=51.5% Gflops=5.384e+02
+Column=000051712 Fraction=51.7% Gflops=5.384e+02
+Column=000051968 Fraction=52.0% Gflops=5.384e+02
+Column=000052224 Fraction=52.2% Gflops=5.383e+02
+Column=000052480 Fraction=52.5% Gflops=5.383e+02
+Column=000052736 Fraction=52.7% Gflops=5.382e+02
+Column=000052992 Fraction=53.0% Gflops=5.382e+02
+Column=000053248 Fraction=53.2% Gflops=5.381e+02
+Column=000053504 Fraction=53.5% Gflops=5.381e+02
+Column=000053760 Fraction=53.8% Gflops=5.380e+02
+Column=000054016 Fraction=54.0% Gflops=5.380e+02
+Column=000054272 Fraction=54.3% Gflops=5.379e+02
+Column=000054528 Fraction=54.5% Gflops=5.379e+02
+Column=000054784 Fraction=54.8% Gflops=5.378e+02
+Column=000055040 Fraction=55.0% Gflops=5.378e+02
+Column=000055296 Fraction=55.3% Gflops=5.377e+02
+Column=000055552 Fraction=55.6% Gflops=5.377e+02
+Column=000055808 Fraction=55.8% Gflops=5.376e+02
+Column=000056064 Fraction=56.1% Gflops=5.376e+02
+Column=000056320 Fraction=56.3% Gflops=5.375e+02
+Column=000056576 Fraction=56.6% Gflops=5.375e+02
+Column=000056832 Fraction=56.8% Gflops=5.374e+02
+Column=000057088 Fraction=57.1% Gflops=5.374e+02
+Column=000057344 Fraction=57.3% Gflops=5.373e+02
+Column=000057600 Fraction=57.6% Gflops=5.373e+02
+Column=000057856 Fraction=57.9% Gflops=5.372e+02
+Column=000058112 Fraction=58.1% Gflops=5.372e+02
+Column=000058368 Fraction=58.4% Gflops=5.371e+02
+Column=000058624 Fraction=58.6% Gflops=5.371e+02
+Column=000058880 Fraction=58.9% Gflops=5.371e+02
+Column=000059136 Fraction=59.1% Gflops=5.370e+02
+Column=000059392 Fraction=59.4% Gflops=5.370e+02
+Column=000059648 Fraction=59.6% Gflops=5.369e+02
+Column=000059904 Fraction=59.9% Gflops=5.369e+02
+Column=000060160 Fraction=60.2% Gflops=5.368e+02
+Column=000060416 Fraction=60.4% Gflops=5.368e+02
+Column=000060672 Fraction=60.7% Gflops=5.367e+02
+Column=000060928 Fraction=60.9% Gflops=5.367e+02
+Column=000061184 Fraction=61.2% Gflops=5.366e+02
+Column=000061440 Fraction=61.4% Gflops=5.366e+02
+Column=000061696 Fraction=61.7% Gflops=5.365e+02
+Column=000061952 Fraction=62.0% Gflops=5.365e+02
+Column=000062208 Fraction=62.2% Gflops=5.364e+02
+Column=000062464 Fraction=62.5% Gflops=5.364e+02
+Column=000062720 Fraction=62.7% Gflops=5.363e+02
+Column=000062976 Fraction=63.0% Gflops=5.363e+02
+Column=000063232 Fraction=63.2% Gflops=5.363e+02
+Column=000063488 Fraction=63.5% Gflops=5.362e+02
+Column=000063744 Fraction=63.7% Gflops=5.362e+02
+Column=000064000 Fraction=64.0% Gflops=5.361e+02
+Column=000064256 Fraction=64.3% Gflops=5.361e+02
+Column=000064512 Fraction=64.5% Gflops=5.361e+02
+Column=000064768 Fraction=64.8% Gflops=5.360e+02
+Column=000065024 Fraction=65.0% Gflops=5.360e+02
+Column=000065280 Fraction=65.3% Gflops=5.359e+02
+Column=000065536 Fraction=65.5% Gflops=5.359e+02
+Column=000065792 Fraction=65.8% Gflops=5.358e+02
+Column=000066048 Fraction=66.0% Gflops=5.358e+02
+Column=000066304 Fraction=66.3% Gflops=5.357e+02
+Column=000066560 Fraction=66.6% Gflops=5.357e+02
+Column=000066816 Fraction=66.8% Gflops=5.356e+02
+Column=000067072 Fraction=67.1% Gflops=5.356e+02
+Column=000067328 Fraction=67.3% Gflops=5.356e+02
+Column=000067584 Fraction=67.6% Gflops=5.355e+02
+Column=000067840 Fraction=67.8% Gflops=5.355e+02
+Column=000068096 Fraction=68.1% Gflops=5.355e+02
+Column=000068352 Fraction=68.4% Gflops=5.354e+02
+Column=000068608 Fraction=68.6% Gflops=5.354e+02
+Column=000068864 Fraction=68.9% Gflops=5.353e+02
+Column=000069120 Fraction=69.1% Gflops=5.353e+02
+Column=000069376 Fraction=69.4% Gflops=5.352e+02
+Column=000069632 Fraction=69.6% Gflops=5.352e+02
+Column=000069888 Fraction=69.9% Gflops=5.352e+02
+Column=000070144 Fraction=70.1% Gflops=5.351e+02
+Column=000070400 Fraction=70.4% Gflops=5.351e+02
+Column=000070656 Fraction=70.7% Gflops=5.350e+02
+Column=000070912 Fraction=70.9% Gflops=5.350e+02
+Column=000071168 Fraction=71.2% Gflops=5.350e+02
+Column=000071424 Fraction=71.4% Gflops=5.349e+02
+Column=000071680 Fraction=71.7% Gflops=5.349e+02
+Column=000071936 Fraction=71.9% Gflops=5.348e+02
+Column=000072192 Fraction=72.2% Gflops=5.348e+02
+Column=000072448 Fraction=72.4% Gflops=5.347e+02
+Column=000072704 Fraction=72.7% Gflops=5.347e+02
+Column=000072960 Fraction=73.0% Gflops=5.347e+02
+Column=000073216 Fraction=73.2% Gflops=5.346e+02
+Column=000073472 Fraction=73.5% Gflops=5.346e+02
+Column=000073728 Fraction=73.7% Gflops=5.346e+02
+Column=000073984 Fraction=74.0% Gflops=5.345e+02
+Column=000074240 Fraction=74.2% Gflops=5.345e+02
+Column=000074496 Fraction=74.5% Gflops=5.344e+02
+Column=000074752 Fraction=74.8% Gflops=5.344e+02
+Column=000075008 Fraction=75.0% Gflops=5.344e+02
+Column=000075264 Fraction=75.3% Gflops=5.343e+02
+Column=000075520 Fraction=75.5% Gflops=5.343e+02
+Column=000075776 Fraction=75.8% Gflops=5.343e+02
+Column=000076032 Fraction=76.0% Gflops=5.342e+02
+Column=000076288 Fraction=76.3% Gflops=5.342e+02
+Column=000076544 Fraction=76.5% Gflops=5.341e+02
+Column=000076800 Fraction=76.8% Gflops=5.341e+02
+Column=000077056 Fraction=77.1% Gflops=5.341e+02
+Column=000077312 Fraction=77.3% Gflops=5.341e+02
+Column=000077568 Fraction=77.6% Gflops=5.340e+02
+Column=000077824 Fraction=77.8% Gflops=5.340e+02
+Column=000078080 Fraction=78.1% Gflops=5.339e+02
+Column=000078336 Fraction=78.3% Gflops=5.339e+02
+Column=000078592 Fraction=78.6% Gflops=5.339e+02
+Column=000078848 Fraction=78.8% Gflops=5.338e+02
+Column=000079104 Fraction=79.1% Gflops=5.338e+02
+Column=000079360 Fraction=79.4% Gflops=5.338e+02
+Column=000079616 Fraction=79.6% Gflops=5.337e+02
+Column=000079872 Fraction=79.9% Gflops=5.337e+02
+Column=000080128 Fraction=80.1% Gflops=5.337e+02
+Column=000080384 Fraction=80.4% Gflops=5.336e+02
+Column=000080640 Fraction=80.6% Gflops=5.336e+02
+Column=000080896 Fraction=80.9% Gflops=5.336e+02
+Column=000081152 Fraction=81.2% Gflops=5.335e+02
+Column=000081408 Fraction=81.4% Gflops=5.335e+02
+Column=000081664 Fraction=81.7% Gflops=5.335e+02
+Column=000081920 Fraction=81.9% Gflops=5.334e+02
+Column=000082176 Fraction=82.2% Gflops=5.334e+02
+Column=000082432 Fraction=82.4% Gflops=5.334e+02
+Column=000082688 Fraction=82.7% Gflops=5.334e+02
+Column=000082944 Fraction=82.9% Gflops=5.333e+02
+Column=000083200 Fraction=83.2% Gflops=5.333e+02
+Column=000083456 Fraction=83.5% Gflops=5.333e+02
+Column=000083712 Fraction=83.7% Gflops=5.332e+02
+Column=000083968 Fraction=84.0% Gflops=5.332e+02
+Column=000084224 Fraction=84.2% Gflops=5.332e+02
+Column=000084480 Fraction=84.5% Gflops=5.332e+02
+Column=000084736 Fraction=84.7% Gflops=5.331e+02
+Column=000084992 Fraction=85.0% Gflops=5.331e+02
+Column=000085248 Fraction=85.2% Gflops=5.331e+02
+Column=000085504 Fraction=85.5% Gflops=5.331e+02
+Column=000085760 Fraction=85.8% Gflops=5.330e+02
+Column=000086016 Fraction=86.0% Gflops=5.330e+02
+Column=000086272 Fraction=86.3% Gflops=5.330e+02
+Column=000086528 Fraction=86.5% Gflops=5.330e+02
+Column=000086784 Fraction=86.8% Gflops=5.329e+02
+Column=000087040 Fraction=87.0% Gflops=5.329e+02
+Column=000087296 Fraction=87.3% Gflops=5.329e+02
+Column=000087552 Fraction=87.6% Gflops=5.329e+02
+Column=000087808 Fraction=87.8% Gflops=5.328e+02
+Column=000088064 Fraction=88.1% Gflops=5.328e+02
+Column=000088320 Fraction=88.3% Gflops=5.328e+02
+Column=000088576 Fraction=88.6% Gflops=5.328e+02
+Column=000088832 Fraction=88.8% Gflops=5.328e+02
+Column=000089088 Fraction=89.1% Gflops=5.327e+02
+Column=000089344 Fraction=89.3% Gflops=5.327e+02
+Column=000089600 Fraction=89.6% Gflops=5.327e+02
+Column=000089856 Fraction=89.9% Gflops=5.327e+02
+Column=000090112 Fraction=90.1% Gflops=5.327e+02
+Column=000090368 Fraction=90.4% Gflops=5.326e+02
+Column=000090624 Fraction=90.6% Gflops=5.326e+02
+Column=000090880 Fraction=90.9% Gflops=5.326e+02
+Column=000091136 Fraction=91.1% Gflops=5.326e+02
+Column=000091392 Fraction=91.4% Gflops=5.326e+02
+Column=000091648 Fraction=91.6% Gflops=5.326e+02
+Column=000091904 Fraction=91.9% Gflops=5.325e+02
+Column=000092160 Fraction=92.2% Gflops=5.325e+02
+Column=000092416 Fraction=92.4% Gflops=5.325e+02
+Column=000092672 Fraction=92.7% Gflops=5.325e+02
+Column=000092928 Fraction=92.9% Gflops=5.325e+02
+Column=000093184 Fraction=93.2% Gflops=5.325e+02
+Column=000093440 Fraction=93.4% Gflops=5.324e+02
+Column=000093696 Fraction=93.7% Gflops=5.324e+02
+Column=000093952 Fraction=94.0% Gflops=5.324e+02
+Column=000094208 Fraction=94.2% Gflops=5.324e+02
+Column=000094464 Fraction=94.5% Gflops=5.324e+02
+Column=000094720 Fraction=94.7% Gflops=5.324e+02
+Column=000094976 Fraction=95.0% Gflops=5.324e+02
+Column=000095232 Fraction=95.2% Gflops=5.324e+02
+Column=000095488 Fraction=95.5% Gflops=5.324e+02
+Column=000095744 Fraction=95.7% Gflops=5.324e+02
+Column=000096000 Fraction=96.0% Gflops=5.323e+02
+Column=000096256 Fraction=96.3% Gflops=5.323e+02
+Column=000096512 Fraction=96.5% Gflops=5.323e+02
+Column=000096768 Fraction=96.8% Gflops=5.323e+02
+Column=000097024 Fraction=97.0% Gflops=5.323e+02
+Column=000097280 Fraction=97.3% Gflops=5.323e+02
+Column=000097536 Fraction=97.5% Gflops=5.323e+02
+Column=000097792 Fraction=97.8% Gflops=5.323e+02
+Column=000098048 Fraction=98.0% Gflops=5.323e+02
+Column=000098304 Fraction=98.3% Gflops=5.323e+02
+Column=000098560 Fraction=98.6% Gflops=5.323e+02
+Column=000098816 Fraction=98.8% Gflops=5.323e+02
+Column=000099072 Fraction=99.1% Gflops=5.323e+02
+Column=000099328 Fraction=99.3% Gflops=5.323e+02
+Column=000099584 Fraction=99.6% Gflops=5.323e+02
+Column=000099840 Fraction=99.8% Gflops=5.323e+02
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR10L2L2      100000   256     1     2            1250.13             5.3329e+02
+HPL_pdgesv() start time Thu May 19 09:27:09 2022
+
+HPL_pdgesv() end time   Thu May 19 09:48:02 2022
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               8.46
++ Max aggregated wall time pfact . . :               1.91
++ Max aggregated wall time mxswp . . :               0.50
+Max aggregated wall time update  . . :            1237.03
++ Max aggregated wall time laswp . . :              28.00
+Max aggregated wall time up tr sv  . :               0.53
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   1.68929849e-03 ...... PASSED
+Column=000000288 Fraction= 0.3% Gflops=1.874e+04
+Column=000000576 Fraction= 0.6% Gflops=1.058e+03
+Column=000000864 Fraction= 0.9% Gflops=8.002e+02
+Column=000001152 Fraction= 1.2% Gflops=7.165e+02
+Column=000001440 Fraction= 1.4% Gflops=6.716e+02
+Column=000001728 Fraction= 1.7% Gflops=6.466e+02
+Column=000002016 Fraction= 2.0% Gflops=6.283e+02
+Column=000002304 Fraction= 2.3% Gflops=6.165e+02
+Column=000002592 Fraction= 2.6% Gflops=6.065e+02
+Column=000002880 Fraction= 2.9% Gflops=5.996e+02
+Column=000003168 Fraction= 3.2% Gflops=5.933e+02
+Column=000003456 Fraction= 3.5% Gflops=5.890e+02
+Column=000003744 Fraction= 3.7% Gflops=5.845e+02
+Column=000004032 Fraction= 4.0% Gflops=5.815e+02
+Column=000004320 Fraction= 4.3% Gflops=5.781e+02
+Column=000004608 Fraction= 4.6% Gflops=5.760e+02
+Column=000004896 Fraction= 4.9% Gflops=5.734e+02
+Column=000005184 Fraction= 5.2% Gflops=5.718e+02
+Column=000005472 Fraction= 5.5% Gflops=5.697e+02
+Column=000005760 Fraction= 5.8% Gflops=5.684e+02
+Column=000006048 Fraction= 6.0% Gflops=5.667e+02
+Column=000006336 Fraction= 6.3% Gflops=5.657e+02
+Column=000006624 Fraction= 6.6% Gflops=5.643e+02
+Column=000006912 Fraction= 6.9% Gflops=5.634e+02
+Column=000007200 Fraction= 7.2% Gflops=5.622e+02
+Column=000007488 Fraction= 7.5% Gflops=5.615e+02
+Column=000007776 Fraction= 7.8% Gflops=5.606e+02
+Column=000008064 Fraction= 8.1% Gflops=5.599e+02
+Column=000008352 Fraction= 8.4% Gflops=5.590e+02
+Column=000008640 Fraction= 8.6% Gflops=5.585e+02
+Column=000008928 Fraction= 8.9% Gflops=5.577e+02
+Column=000009216 Fraction= 9.2% Gflops=5.573e+02
+Column=000009504 Fraction= 9.5% Gflops=5.565e+02
+Column=000009792 Fraction= 9.8% Gflops=5.562e+02
+Column=000010080 Fraction=10.1% Gflops=5.555e+02
+Column=000010368 Fraction=10.4% Gflops=5.552e+02
+Column=000010656 Fraction=10.7% Gflops=5.546e+02
+Column=000010944 Fraction=10.9% Gflops=5.543e+02
+Column=000011232 Fraction=11.2% Gflops=5.537e+02
+Column=000011520 Fraction=11.5% Gflops=5.534e+02
+Column=000011808 Fraction=11.8% Gflops=5.529e+02
+Column=000012096 Fraction=12.1% Gflops=5.527e+02
+Column=000012384 Fraction=12.4% Gflops=5.522e+02
+Column=000012672 Fraction=12.7% Gflops=5.520e+02
+Column=000012960 Fraction=13.0% Gflops=5.516e+02
+Column=000013248 Fraction=13.2% Gflops=5.514e+02
+Column=000013536 Fraction=13.5% Gflops=5.510e+02
+Column=000013824 Fraction=13.8% Gflops=5.508e+02
+Column=000014112 Fraction=14.1% Gflops=5.504e+02
+Column=000014400 Fraction=14.4% Gflops=5.502e+02
+Column=000014688 Fraction=14.7% Gflops=5.499e+02
+Column=000014976 Fraction=15.0% Gflops=5.497e+02
+Column=000015264 Fraction=15.3% Gflops=5.494e+02
+Column=000015552 Fraction=15.6% Gflops=5.492e+02
+Column=000015840 Fraction=15.8% Gflops=5.489e+02
+Column=000016128 Fraction=16.1% Gflops=5.488e+02
+Column=000016416 Fraction=16.4% Gflops=5.485e+02
+Column=000016704 Fraction=16.7% Gflops=5.484e+02
+Column=000016992 Fraction=17.0% Gflops=5.481e+02
+Column=000017280 Fraction=17.3% Gflops=5.480e+02
+Column=000017568 Fraction=17.6% Gflops=5.477e+02
+Column=000017856 Fraction=17.9% Gflops=5.476e+02
+Column=000018144 Fraction=18.1% Gflops=5.473e+02
+Column=000018432 Fraction=18.4% Gflops=5.472e+02
+Column=000018720 Fraction=18.7% Gflops=5.470e+02
+Column=000019008 Fraction=19.0% Gflops=5.469e+02
+Column=000019296 Fraction=19.3% Gflops=5.467e+02
+Column=000019584 Fraction=19.6% Gflops=5.466e+02
+Column=000019872 Fraction=19.9% Gflops=5.464e+02
+Column=000020160 Fraction=20.2% Gflops=5.463e+02
+Column=000020448 Fraction=20.4% Gflops=5.461e+02
+Column=000020736 Fraction=20.7% Gflops=5.460e+02
+Column=000021024 Fraction=21.0% Gflops=5.458e+02
+Column=000021312 Fraction=21.3% Gflops=5.457e+02
+Column=000021600 Fraction=21.6% Gflops=5.455e+02
+Column=000021888 Fraction=21.9% Gflops=5.454e+02
+Column=000022176 Fraction=22.2% Gflops=5.452e+02
+Column=000022464 Fraction=22.5% Gflops=5.452e+02
+Column=000022752 Fraction=22.8% Gflops=5.450e+02
+Column=000023040 Fraction=23.0% Gflops=5.449e+02
+Column=000023328 Fraction=23.3% Gflops=5.447e+02
+Column=000023616 Fraction=23.6% Gflops=5.446e+02
+Column=000023904 Fraction=23.9% Gflops=5.445e+02
+Column=000024192 Fraction=24.2% Gflops=5.444e+02
+Column=000024480 Fraction=24.5% Gflops=5.442e+02
+Column=000024768 Fraction=24.8% Gflops=5.442e+02
+Column=000025056 Fraction=25.1% Gflops=5.440e+02
+Column=000025344 Fraction=25.3% Gflops=5.439e+02
+Column=000025632 Fraction=25.6% Gflops=5.438e+02
+Column=000025920 Fraction=25.9% Gflops=5.437e+02
+Column=000026208 Fraction=26.2% Gflops=5.435e+02
+Column=000026496 Fraction=26.5% Gflops=5.435e+02
+Column=000026784 Fraction=26.8% Gflops=5.433e+02
+Column=000027072 Fraction=27.1% Gflops=5.433e+02
+Column=000027360 Fraction=27.4% Gflops=5.431e+02
+Column=000027648 Fraction=27.6% Gflops=5.431e+02
+Column=000027936 Fraction=27.9% Gflops=5.429e+02
+Column=000028224 Fraction=28.2% Gflops=5.429e+02
+Column=000028512 Fraction=28.5% Gflops=5.427e+02
+Column=000028800 Fraction=28.8% Gflops=5.427e+02
+Column=000029088 Fraction=29.1% Gflops=5.425e+02
+Column=000029376 Fraction=29.4% Gflops=5.425e+02
+Column=000029664 Fraction=29.7% Gflops=5.423e+02
+Column=000029952 Fraction=30.0% Gflops=5.423e+02
+Column=000030240 Fraction=30.2% Gflops=5.421e+02
+Column=000030528 Fraction=30.5% Gflops=5.421e+02
+Column=000030816 Fraction=30.8% Gflops=5.420e+02
+Column=000031104 Fraction=31.1% Gflops=5.419e+02
+Column=000031392 Fraction=31.4% Gflops=5.418e+02
+Column=000031680 Fraction=31.7% Gflops=5.418e+02
+Column=000031968 Fraction=32.0% Gflops=5.416e+02
+Column=000032256 Fraction=32.3% Gflops=5.416e+02
+Column=000032544 Fraction=32.5% Gflops=5.415e+02
+Column=000032832 Fraction=32.8% Gflops=5.414e+02
+Column=000033120 Fraction=33.1% Gflops=5.413e+02
+Column=000033408 Fraction=33.4% Gflops=5.412e+02
+Column=000033696 Fraction=33.7% Gflops=5.411e+02
+Column=000033984 Fraction=34.0% Gflops=5.411e+02
+Column=000034272 Fraction=34.3% Gflops=5.409e+02
+Column=000034560 Fraction=34.6% Gflops=5.409e+02
+Column=000034848 Fraction=34.8% Gflops=5.408e+02
+Column=000035136 Fraction=35.1% Gflops=5.407e+02
+Column=000035424 Fraction=35.4% Gflops=5.406e+02
+Column=000035712 Fraction=35.7% Gflops=5.406e+02
+Column=000036000 Fraction=36.0% Gflops=5.405e+02
+Column=000036288 Fraction=36.3% Gflops=5.404e+02
+Column=000036576 Fraction=36.6% Gflops=5.403e+02
+Column=000036864 Fraction=36.9% Gflops=5.403e+02
+Column=000037152 Fraction=37.2% Gflops=5.401e+02
+Column=000037440 Fraction=37.4% Gflops=5.401e+02
+Column=000037728 Fraction=37.7% Gflops=5.400e+02
+Column=000038016 Fraction=38.0% Gflops=5.399e+02
+Column=000038304 Fraction=38.3% Gflops=5.398e+02
+Column=000038592 Fraction=38.6% Gflops=5.398e+02
+Column=000038880 Fraction=38.9% Gflops=5.397e+02
+Column=000039168 Fraction=39.2% Gflops=5.396e+02
+Column=000039456 Fraction=39.5% Gflops=5.395e+02
+Column=000039744 Fraction=39.7% Gflops=5.395e+02
+Column=000040032 Fraction=40.0% Gflops=5.394e+02
+Column=000040320 Fraction=40.3% Gflops=5.393e+02
+Column=000040608 Fraction=40.6% Gflops=5.392e+02
+Column=000040896 Fraction=40.9% Gflops=5.392e+02
+Column=000041184 Fraction=41.2% Gflops=5.391e+02
+Column=000041472 Fraction=41.5% Gflops=5.391e+02
+Column=000041760 Fraction=41.8% Gflops=5.390e+02
+Column=000042048 Fraction=42.0% Gflops=5.389e+02
+Column=000042336 Fraction=42.3% Gflops=5.388e+02
+Column=000042624 Fraction=42.6% Gflops=5.388e+02
+Column=000042912 Fraction=42.9% Gflops=5.387e+02
+Column=000043200 Fraction=43.2% Gflops=5.387e+02
+Column=000043488 Fraction=43.5% Gflops=5.386e+02
+Column=000043776 Fraction=43.8% Gflops=5.385e+02
+Column=000044064 Fraction=44.1% Gflops=5.384e+02
+Column=000044352 Fraction=44.4% Gflops=5.384e+02
+Column=000044640 Fraction=44.6% Gflops=5.383e+02
+Column=000044928 Fraction=44.9% Gflops=5.382e+02
+Column=000045216 Fraction=45.2% Gflops=5.381e+02
+Column=000045504 Fraction=45.5% Gflops=5.381e+02
+Column=000045792 Fraction=45.8% Gflops=5.380e+02
+Column=000046080 Fraction=46.1% Gflops=5.380e+02
+Column=000046368 Fraction=46.4% Gflops=5.379e+02
+Column=000046656 Fraction=46.7% Gflops=5.378e+02
+Column=000046944 Fraction=46.9% Gflops=5.378e+02
+Column=000047232 Fraction=47.2% Gflops=5.377e+02
+Column=000047520 Fraction=47.5% Gflops=5.376e+02
+Column=000047808 Fraction=47.8% Gflops=5.376e+02
+Column=000048096 Fraction=48.1% Gflops=5.375e+02
+Column=000048384 Fraction=48.4% Gflops=5.375e+02
+Column=000048672 Fraction=48.7% Gflops=5.374e+02
+Column=000048960 Fraction=49.0% Gflops=5.373e+02
+Column=000049248 Fraction=49.2% Gflops=5.372e+02
+Column=000049536 Fraction=49.5% Gflops=5.372e+02
+Column=000049824 Fraction=49.8% Gflops=5.371e+02
+Column=000050112 Fraction=50.1% Gflops=5.371e+02
+Column=000050400 Fraction=50.4% Gflops=5.370e+02
+Column=000050688 Fraction=50.7% Gflops=5.370e+02
+Column=000050976 Fraction=51.0% Gflops=5.369e+02
+Column=000051264 Fraction=51.3% Gflops=5.368e+02
+Column=000051552 Fraction=51.6% Gflops=5.367e+02
+Column=000051840 Fraction=51.8% Gflops=5.367e+02
+Column=000052128 Fraction=52.1% Gflops=5.366e+02
+Column=000052416 Fraction=52.4% Gflops=5.366e+02
+Column=000052704 Fraction=52.7% Gflops=5.365e+02
+Column=000052992 Fraction=53.0% Gflops=5.365e+02
+Column=000053280 Fraction=53.3% Gflops=5.364e+02
+Column=000053568 Fraction=53.6% Gflops=5.364e+02
+Column=000053856 Fraction=53.9% Gflops=5.363e+02
+Column=000054144 Fraction=54.1% Gflops=5.363e+02
+Column=000054432 Fraction=54.4% Gflops=5.362e+02
+Column=000054720 Fraction=54.7% Gflops=5.361e+02
+Column=000055008 Fraction=55.0% Gflops=5.361e+02
+Column=000055296 Fraction=55.3% Gflops=5.360e+02
+Column=000055584 Fraction=55.6% Gflops=5.360e+02
+Column=000055872 Fraction=55.9% Gflops=5.359e+02
+Column=000056160 Fraction=56.2% Gflops=5.358e+02
+Column=000056448 Fraction=56.4% Gflops=5.358e+02
+Column=000056736 Fraction=56.7% Gflops=5.357e+02
+Column=000057024 Fraction=57.0% Gflops=5.357e+02
+Column=000057312 Fraction=57.3% Gflops=5.356e+02
+Column=000057600 Fraction=57.6% Gflops=5.356e+02
+Column=000057888 Fraction=57.9% Gflops=5.355e+02
+Column=000058176 Fraction=58.2% Gflops=5.355e+02
+Column=000058464 Fraction=58.5% Gflops=5.354e+02
+Column=000058752 Fraction=58.8% Gflops=5.354e+02
+Column=000059040 Fraction=59.0% Gflops=5.353e+02
+Column=000059328 Fraction=59.3% Gflops=5.353e+02
+Column=000059616 Fraction=59.6% Gflops=5.352e+02
+Column=000059904 Fraction=59.9% Gflops=5.352e+02
+Column=000060192 Fraction=60.2% Gflops=5.351e+02
+Column=000060480 Fraction=60.5% Gflops=5.350e+02
+Column=000060768 Fraction=60.8% Gflops=5.350e+02
+Column=000061056 Fraction=61.1% Gflops=5.349e+02
+Column=000061344 Fraction=61.3% Gflops=5.349e+02
+Column=000061632 Fraction=61.6% Gflops=5.348e+02
+Column=000061920 Fraction=61.9% Gflops=5.348e+02
+Column=000062208 Fraction=62.2% Gflops=5.347e+02
+Column=000062496 Fraction=62.5% Gflops=5.347e+02
+Column=000062784 Fraction=62.8% Gflops=5.346e+02
+Column=000063072 Fraction=63.1% Gflops=5.346e+02
+Column=000063360 Fraction=63.4% Gflops=5.345e+02
+Column=000063648 Fraction=63.6% Gflops=5.345e+02
+Column=000063936 Fraction=63.9% Gflops=5.344e+02
+Column=000064224 Fraction=64.2% Gflops=5.344e+02
+Column=000064512 Fraction=64.5% Gflops=5.343e+02
+Column=000064800 Fraction=64.8% Gflops=5.343e+02
+Column=000065088 Fraction=65.1% Gflops=5.342e+02
+Column=000065376 Fraction=65.4% Gflops=5.342e+02
+Column=000065664 Fraction=65.7% Gflops=5.341e+02
+Column=000065952 Fraction=66.0% Gflops=5.341e+02
+Column=000066240 Fraction=66.2% Gflops=5.340e+02
+Column=000066528 Fraction=66.5% Gflops=5.340e+02
+Column=000066816 Fraction=66.8% Gflops=5.339e+02
+Column=000067104 Fraction=67.1% Gflops=5.339e+02
+Column=000067392 Fraction=67.4% Gflops=5.338e+02
+Column=000067680 Fraction=67.7% Gflops=5.338e+02
+Column=000067968 Fraction=68.0% Gflops=5.337e+02
+Column=000068256 Fraction=68.3% Gflops=5.337e+02
+Column=000068544 Fraction=68.5% Gflops=5.336e+02
+Column=000068832 Fraction=68.8% Gflops=5.336e+02
+Column=000069120 Fraction=69.1% Gflops=5.336e+02
+Column=000069408 Fraction=69.4% Gflops=5.335e+02
+Column=000069696 Fraction=69.7% Gflops=5.335e+02
+Column=000069984 Fraction=70.0% Gflops=5.334e+02
+Column=000070272 Fraction=70.3% Gflops=5.334e+02
+Column=000070560 Fraction=70.6% Gflops=5.333e+02
+Column=000070848 Fraction=70.8% Gflops=5.333e+02
+Column=000071136 Fraction=71.1% Gflops=5.332e+02
+Column=000071424 Fraction=71.4% Gflops=5.332e+02
+Column=000071712 Fraction=71.7% Gflops=5.331e+02
+Column=000072000 Fraction=72.0% Gflops=5.331e+02
+Column=000072288 Fraction=72.3% Gflops=5.330e+02
+Column=000072576 Fraction=72.6% Gflops=5.330e+02
+Column=000072864 Fraction=72.9% Gflops=5.329e+02
+Column=000073152 Fraction=73.2% Gflops=5.329e+02
+Column=000073440 Fraction=73.4% Gflops=5.328e+02
+Column=000073728 Fraction=73.7% Gflops=5.328e+02
+Column=000074016 Fraction=74.0% Gflops=5.327e+02
+Column=000074304 Fraction=74.3% Gflops=5.327e+02
+Column=000074592 Fraction=74.6% Gflops=5.326e+02
+Column=000074880 Fraction=74.9% Gflops=5.326e+02
+Column=000075168 Fraction=75.2% Gflops=5.326e+02
+Column=000075456 Fraction=75.5% Gflops=5.325e+02
+Column=000075744 Fraction=75.7% Gflops=5.325e+02
+Column=000076032 Fraction=76.0% Gflops=5.324e+02
+Column=000076320 Fraction=76.3% Gflops=5.324e+02
+Column=000076608 Fraction=76.6% Gflops=5.323e+02
+Column=000076896 Fraction=76.9% Gflops=5.323e+02
+Column=000077184 Fraction=77.2% Gflops=5.323e+02
+Column=000077472 Fraction=77.5% Gflops=5.322e+02
+Column=000077760 Fraction=77.8% Gflops=5.322e+02
+Column=000078048 Fraction=78.0% Gflops=5.321e+02
+Column=000078336 Fraction=78.3% Gflops=5.321e+02
+Column=000078624 Fraction=78.6% Gflops=5.320e+02
+Column=000078912 Fraction=78.9% Gflops=5.320e+02
+Column=000079200 Fraction=79.2% Gflops=5.320e+02
+Column=000079488 Fraction=79.5% Gflops=5.319e+02
+Column=000079776 Fraction=79.8% Gflops=5.319e+02
+Column=000080064 Fraction=80.1% Gflops=5.319e+02
+Column=000080352 Fraction=80.4% Gflops=5.318e+02
+Column=000080640 Fraction=80.6% Gflops=5.318e+02
+Column=000080928 Fraction=80.9% Gflops=5.317e+02
+Column=000081216 Fraction=81.2% Gflops=5.317e+02
+Column=000081504 Fraction=81.5% Gflops=5.317e+02
+Column=000081792 Fraction=81.8% Gflops=5.316e+02
+Column=000082080 Fraction=82.1% Gflops=5.316e+02
+Column=000082368 Fraction=82.4% Gflops=5.316e+02
+Column=000082656 Fraction=82.7% Gflops=5.315e+02
+Column=000082944 Fraction=82.9% Gflops=5.315e+02
+Column=000083232 Fraction=83.2% Gflops=5.314e+02
+Column=000083520 Fraction=83.5% Gflops=5.314e+02
+Column=000083808 Fraction=83.8% Gflops=5.314e+02
+Column=000084096 Fraction=84.1% Gflops=5.314e+02
+Column=000084384 Fraction=84.4% Gflops=5.313e+02
+Column=000084672 Fraction=84.7% Gflops=5.313e+02
+Column=000084960 Fraction=85.0% Gflops=5.312e+02
+Column=000085248 Fraction=85.2% Gflops=5.312e+02
+Column=000085536 Fraction=85.5% Gflops=5.312e+02
+Column=000085824 Fraction=85.8% Gflops=5.312e+02
+Column=000086112 Fraction=86.1% Gflops=5.311e+02
+Column=000086400 Fraction=86.4% Gflops=5.311e+02
+Column=000086688 Fraction=86.7% Gflops=5.311e+02
+Column=000086976 Fraction=87.0% Gflops=5.310e+02
+Column=000087264 Fraction=87.3% Gflops=5.310e+02
+Column=000087552 Fraction=87.6% Gflops=5.310e+02
+Column=000087840 Fraction=87.8% Gflops=5.310e+02
+Column=000088128 Fraction=88.1% Gflops=5.309e+02
+Column=000088416 Fraction=88.4% Gflops=5.309e+02
+Column=000088704 Fraction=88.7% Gflops=5.309e+02
+Column=000088992 Fraction=89.0% Gflops=5.309e+02
+Column=000089280 Fraction=89.3% Gflops=5.308e+02
+Column=000089568 Fraction=89.6% Gflops=5.308e+02
+Column=000089856 Fraction=89.9% Gflops=5.308e+02
+Column=000090144 Fraction=90.1% Gflops=5.308e+02
+Column=000090432 Fraction=90.4% Gflops=5.307e+02
+Column=000090720 Fraction=90.7% Gflops=5.307e+02
+Column=000091008 Fraction=91.0% Gflops=5.307e+02
+Column=000091296 Fraction=91.3% Gflops=5.307e+02
+Column=000091584 Fraction=91.6% Gflops=5.307e+02
+Column=000091872 Fraction=91.9% Gflops=5.306e+02
+Column=000092160 Fraction=92.2% Gflops=5.306e+02
+Column=000092448 Fraction=92.4% Gflops=5.306e+02
+Column=000092736 Fraction=92.7% Gflops=5.306e+02
+Column=000093024 Fraction=93.0% Gflops=5.306e+02
+Column=000093312 Fraction=93.3% Gflops=5.306e+02
+Column=000093600 Fraction=93.6% Gflops=5.305e+02
+Column=000093888 Fraction=93.9% Gflops=5.305e+02
+Column=000094176 Fraction=94.2% Gflops=5.305e+02
+Column=000094464 Fraction=94.5% Gflops=5.305e+02
+Column=000094752 Fraction=94.8% Gflops=5.305e+02
+Column=000095040 Fraction=95.0% Gflops=5.305e+02
+Column=000095328 Fraction=95.3% Gflops=5.305e+02
+Column=000095616 Fraction=95.6% Gflops=5.304e+02
+Column=000095904 Fraction=95.9% Gflops=5.304e+02
+Column=000096192 Fraction=96.2% Gflops=5.304e+02
+Column=000096480 Fraction=96.5% Gflops=5.304e+02
+Column=000096768 Fraction=96.8% Gflops=5.304e+02
+Column=000097056 Fraction=97.1% Gflops=5.304e+02
+Column=000097344 Fraction=97.3% Gflops=5.304e+02
+Column=000097632 Fraction=97.6% Gflops=5.304e+02
+Column=000097920 Fraction=97.9% Gflops=5.304e+02
+Column=000098208 Fraction=98.2% Gflops=5.304e+02
+Column=000098496 Fraction=98.5% Gflops=5.304e+02
+Column=000098784 Fraction=98.8% Gflops=5.304e+02
+Column=000099072 Fraction=99.1% Gflops=5.304e+02
+Column=000099360 Fraction=99.4% Gflops=5.304e+02
+Column=000099648 Fraction=99.6% Gflops=5.304e+02
+Column=000099936 Fraction=99.9% Gflops=5.303e+02
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR10L2L2      100000   288     1     2            1254.63             5.3138e+02
+HPL_pdgesv() start time Thu May 19 09:50:24 2022
+
+HPL_pdgesv() end time   Thu May 19 10:11:21 2022
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               6.42
++ Max aggregated wall time pfact . . :               1.85
++ Max aggregated wall time mxswp . . :               0.52
+Max aggregated wall time update  . . :            1243.67
++ Max aggregated wall time laswp . . :              27.91
+Max aggregated wall time up tr sv  . :               0.53
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   1.51233380e-03 ...... PASSED
+Column=000000320 Fraction= 0.3% Gflops=1.861e+04
+Column=000000640 Fraction= 0.6% Gflops=1.059e+03
+Column=000000960 Fraction= 1.0% Gflops=7.994e+02
+Column=000001280 Fraction= 1.3% Gflops=7.162e+02
+Column=000001600 Fraction= 1.6% Gflops=6.709e+02
+Column=000001920 Fraction= 1.9% Gflops=6.462e+02
+Column=000002240 Fraction= 2.2% Gflops=6.277e+02
+Column=000002560 Fraction= 2.6% Gflops=6.160e+02
+Column=000002880 Fraction= 2.9% Gflops=6.059e+02
+Column=000003200 Fraction= 3.2% Gflops=5.992e+02
+Column=000003520 Fraction= 3.5% Gflops=5.927e+02
+Column=000003840 Fraction= 3.8% Gflops=5.884e+02
+Column=000004160 Fraction= 4.2% Gflops=5.839e+02
+Column=000004480 Fraction= 4.5% Gflops=5.810e+02
+Column=000004800 Fraction= 4.8% Gflops=5.776e+02
+Column=000005120 Fraction= 5.1% Gflops=5.755e+02
+Column=000005440 Fraction= 5.4% Gflops=5.729e+02
+Column=000005760 Fraction= 5.8% Gflops=5.712e+02
+Column=000006080 Fraction= 6.1% Gflops=5.692e+02
+Column=000006400 Fraction= 6.4% Gflops=5.679e+02
+Column=000006720 Fraction= 6.7% Gflops=5.662e+02
+Column=000007040 Fraction= 7.0% Gflops=5.651e+02
+Column=000007360 Fraction= 7.4% Gflops=5.637e+02
+Column=000007680 Fraction= 7.7% Gflops=5.628e+02
+Column=000008000 Fraction= 8.0% Gflops=5.616e+02
+Column=000008320 Fraction= 8.3% Gflops=5.609e+02
+Column=000008640 Fraction= 8.6% Gflops=5.598e+02
+Column=000008960 Fraction= 9.0% Gflops=5.592e+02
+Column=000009280 Fraction= 9.3% Gflops=5.583e+02
+Column=000009600 Fraction= 9.6% Gflops=5.578e+02
+Column=000009920 Fraction= 9.9% Gflops=5.570e+02
+Column=000010240 Fraction=10.2% Gflops=5.565e+02
+Column=000010560 Fraction=10.6% Gflops=5.558e+02
+Column=000010880 Fraction=10.9% Gflops=5.554e+02
+Column=000011200 Fraction=11.2% Gflops=5.547e+02
+Column=000011520 Fraction=11.5% Gflops=5.544e+02
+Column=000011840 Fraction=11.8% Gflops=5.538e+02
+Column=000012160 Fraction=12.2% Gflops=5.535e+02
+Column=000012480 Fraction=12.5% Gflops=5.529e+02
+Column=000012800 Fraction=12.8% Gflops=5.527e+02
+Column=000013120 Fraction=13.1% Gflops=5.521e+02
+Column=000013440 Fraction=13.4% Gflops=5.519e+02
+Column=000013760 Fraction=13.8% Gflops=5.514e+02
+Column=000014080 Fraction=14.1% Gflops=5.512e+02
+Column=000014400 Fraction=14.4% Gflops=5.508e+02
+Column=000014720 Fraction=14.7% Gflops=5.506e+02
+Column=000015040 Fraction=15.0% Gflops=5.502e+02
+Column=000015360 Fraction=15.4% Gflops=5.500e+02
+Column=000015680 Fraction=15.7% Gflops=5.496e+02
+Column=000016000 Fraction=16.0% Gflops=5.494e+02
+Column=000016320 Fraction=16.3% Gflops=5.491e+02
+Column=000016640 Fraction=16.6% Gflops=5.489e+02
+Column=000016960 Fraction=17.0% Gflops=5.486e+02
+Column=000017280 Fraction=17.3% Gflops=5.484e+02
+Column=000017600 Fraction=17.6% Gflops=5.481e+02
+Column=000017920 Fraction=17.9% Gflops=5.480e+02
+Column=000018240 Fraction=18.2% Gflops=5.477e+02
+Column=000018560 Fraction=18.6% Gflops=5.475e+02
+Column=000018880 Fraction=18.9% Gflops=5.472e+02
+Column=000019200 Fraction=19.2% Gflops=5.471e+02
+Column=000019520 Fraction=19.5% Gflops=5.468e+02
+Column=000019840 Fraction=19.8% Gflops=5.467e+02
+Column=000020160 Fraction=20.2% Gflops=5.465e+02
+Column=000020480 Fraction=20.5% Gflops=5.464e+02
+Column=000020800 Fraction=20.8% Gflops=5.461e+02
+Column=000021120 Fraction=21.1% Gflops=5.460e+02
+Column=000021440 Fraction=21.4% Gflops=5.458e+02
+Column=000021760 Fraction=21.8% Gflops=5.457e+02
+Column=000022080 Fraction=22.1% Gflops=5.454e+02
+Column=000022400 Fraction=22.4% Gflops=5.454e+02
+Column=000022720 Fraction=22.7% Gflops=5.451e+02
+Column=000023040 Fraction=23.0% Gflops=5.450e+02
+Column=000023360 Fraction=23.4% Gflops=5.448e+02
+Column=000023680 Fraction=23.7% Gflops=5.447e+02
+Column=000024000 Fraction=24.0% Gflops=5.445e+02
+Column=000024320 Fraction=24.3% Gflops=5.444e+02
+Column=000024640 Fraction=24.6% Gflops=5.442e+02
+Column=000024960 Fraction=25.0% Gflops=5.442e+02
+Column=000025280 Fraction=25.3% Gflops=5.440e+02
+Column=000025600 Fraction=25.6% Gflops=5.439e+02
+Column=000025920 Fraction=25.9% Gflops=5.437e+02
+Column=000026240 Fraction=26.2% Gflops=5.436e+02
+Column=000026560 Fraction=26.6% Gflops=5.434e+02
+Column=000026880 Fraction=26.9% Gflops=5.434e+02
+Column=000027200 Fraction=27.2% Gflops=5.432e+02
+Column=000027520 Fraction=27.5% Gflops=5.431e+02
+Column=000027840 Fraction=27.8% Gflops=5.429e+02
+Column=000028160 Fraction=28.2% Gflops=5.429e+02
+Column=000028480 Fraction=28.5% Gflops=5.427e+02
+Column=000028800 Fraction=28.8% Gflops=5.426e+02
+Column=000029120 Fraction=29.1% Gflops=5.425e+02
+Column=000029440 Fraction=29.4% Gflops=5.424e+02
+Column=000029760 Fraction=29.8% Gflops=5.423e+02
+Column=000030080 Fraction=30.1% Gflops=5.422e+02
+Column=000030400 Fraction=30.4% Gflops=5.421e+02
+Column=000030720 Fraction=30.7% Gflops=5.420e+02
+Column=000031040 Fraction=31.0% Gflops=5.419e+02
+Column=000031360 Fraction=31.4% Gflops=5.418e+02
+Column=000031680 Fraction=31.7% Gflops=5.416e+02
+Column=000032000 Fraction=32.0% Gflops=5.416e+02
+Column=000032320 Fraction=32.3% Gflops=5.414e+02
+Column=000032640 Fraction=32.6% Gflops=5.414e+02
+Column=000032960 Fraction=33.0% Gflops=5.412e+02
+Column=000033280 Fraction=33.3% Gflops=5.412e+02
+Column=000033600 Fraction=33.6% Gflops=5.410e+02
+Column=000033920 Fraction=33.9% Gflops=5.410e+02
+Column=000034240 Fraction=34.2% Gflops=5.408e+02
+Column=000034560 Fraction=34.6% Gflops=5.408e+02
+Column=000034880 Fraction=34.9% Gflops=5.406e+02
+Column=000035200 Fraction=35.2% Gflops=5.406e+02
+Column=000035520 Fraction=35.5% Gflops=5.405e+02
+Column=000035840 Fraction=35.8% Gflops=5.404e+02
+Column=000036160 Fraction=36.2% Gflops=5.403e+02
+Column=000036480 Fraction=36.5% Gflops=5.402e+02
+Column=000036800 Fraction=36.8% Gflops=5.401e+02
+Column=000037120 Fraction=37.1% Gflops=5.400e+02
+Column=000037440 Fraction=37.4% Gflops=5.399e+02
+Column=000037760 Fraction=37.8% Gflops=5.399e+02
+Column=000038080 Fraction=38.1% Gflops=5.397e+02
+Column=000038400 Fraction=38.4% Gflops=5.397e+02
+Column=000038720 Fraction=38.7% Gflops=5.395e+02
+Column=000039040 Fraction=39.0% Gflops=5.395e+02
+Column=000039360 Fraction=39.4% Gflops=5.394e+02
+Column=000039680 Fraction=39.7% Gflops=5.394e+02
+Column=000040000 Fraction=40.0% Gflops=5.392e+02
+Column=000040320 Fraction=40.3% Gflops=5.392e+02
+Column=000040640 Fraction=40.6% Gflops=5.391e+02
+Column=000040960 Fraction=41.0% Gflops=5.390e+02
+Column=000041280 Fraction=41.3% Gflops=5.389e+02
+Column=000041600 Fraction=41.6% Gflops=5.389e+02
+Column=000041920 Fraction=41.9% Gflops=5.387e+02
+Column=000042240 Fraction=42.2% Gflops=5.387e+02
+Column=000042560 Fraction=42.6% Gflops=5.386e+02
+Column=000042880 Fraction=42.9% Gflops=5.386e+02
+Column=000043200 Fraction=43.2% Gflops=5.384e+02
+Column=000043520 Fraction=43.5% Gflops=5.384e+02
+Column=000043840 Fraction=43.8% Gflops=5.383e+02
+Column=000044160 Fraction=44.2% Gflops=5.382e+02
+Column=000044480 Fraction=44.5% Gflops=5.381e+02
+Column=000044800 Fraction=44.8% Gflops=5.381e+02
+Column=000045120 Fraction=45.1% Gflops=5.380e+02
+Column=000045440 Fraction=45.4% Gflops=5.379e+02
+Column=000045760 Fraction=45.8% Gflops=5.378e+02
+Column=000046080 Fraction=46.1% Gflops=5.378e+02
+Column=000046400 Fraction=46.4% Gflops=5.377e+02
+Column=000046720 Fraction=46.7% Gflops=5.376e+02
+Column=000047040 Fraction=47.0% Gflops=5.375e+02
+Column=000047360 Fraction=47.4% Gflops=5.375e+02
+Column=000047680 Fraction=47.7% Gflops=5.374e+02
+Column=000048000 Fraction=48.0% Gflops=5.373e+02
+Column=000048320 Fraction=48.3% Gflops=5.372e+02
+Column=000048640 Fraction=48.6% Gflops=5.372e+02
+Column=000048960 Fraction=49.0% Gflops=5.371e+02
+Column=000049280 Fraction=49.3% Gflops=5.370e+02
+Column=000049600 Fraction=49.6% Gflops=5.369e+02
+Column=000049920 Fraction=49.9% Gflops=5.369e+02
+Column=000050240 Fraction=50.2% Gflops=5.368e+02
+Column=000050560 Fraction=50.6% Gflops=5.368e+02
+Column=000050880 Fraction=50.9% Gflops=5.367e+02
+Column=000051200 Fraction=51.2% Gflops=5.366e+02
+Column=000051520 Fraction=51.5% Gflops=5.365e+02
+Column=000051840 Fraction=51.8% Gflops=5.365e+02
+Column=000052160 Fraction=52.2% Gflops=5.364e+02
+Column=000052480 Fraction=52.5% Gflops=5.363e+02
+Column=000052800 Fraction=52.8% Gflops=5.362e+02
+Column=000053120 Fraction=53.1% Gflops=5.362e+02
+Column=000053440 Fraction=53.4% Gflops=5.361e+02
+Column=000053760 Fraction=53.8% Gflops=5.361e+02
+Column=000054080 Fraction=54.1% Gflops=5.360e+02
+Column=000054400 Fraction=54.4% Gflops=5.359e+02
+Column=000054720 Fraction=54.7% Gflops=5.359e+02
+Column=000055040 Fraction=55.0% Gflops=5.358e+02
+Column=000055360 Fraction=55.4% Gflops=5.357e+02
+Column=000055680 Fraction=55.7% Gflops=5.357e+02
+Column=000056000 Fraction=56.0% Gflops=5.356e+02
+Column=000056320 Fraction=56.3% Gflops=5.356e+02
+Column=000056640 Fraction=56.6% Gflops=5.355e+02
+Column=000056960 Fraction=57.0% Gflops=5.354e+02
+Column=000057280 Fraction=57.3% Gflops=5.354e+02
+Column=000057600 Fraction=57.6% Gflops=5.353e+02
+Column=000057920 Fraction=57.9% Gflops=5.352e+02
+Column=000058240 Fraction=58.2% Gflops=5.352e+02
+Column=000058560 Fraction=58.6% Gflops=5.351e+02
+Column=000058880 Fraction=58.9% Gflops=5.351e+02
+Column=000059200 Fraction=59.2% Gflops=5.350e+02
+Column=000059520 Fraction=59.5% Gflops=5.349e+02
+Column=000059840 Fraction=59.8% Gflops=5.349e+02
+Column=000060160 Fraction=60.2% Gflops=5.348e+02
+Column=000060480 Fraction=60.5% Gflops=5.347e+02
+Column=000060800 Fraction=60.8% Gflops=5.347e+02
+Column=000061120 Fraction=61.1% Gflops=5.346e+02
+Column=000061440 Fraction=61.4% Gflops=5.346e+02
+Column=000061760 Fraction=61.8% Gflops=5.345e+02
+Column=000062080 Fraction=62.1% Gflops=5.345e+02
+Column=000062400 Fraction=62.4% Gflops=5.344e+02
+Column=000062720 Fraction=62.7% Gflops=5.343e+02
+Column=000063040 Fraction=63.0% Gflops=5.343e+02
+Column=000063360 Fraction=63.4% Gflops=5.342e+02
+Column=000063680 Fraction=63.7% Gflops=5.341e+02
+Column=000064000 Fraction=64.0% Gflops=5.341e+02
+Column=000064320 Fraction=64.3% Gflops=5.340e+02
+Column=000064640 Fraction=64.6% Gflops=5.340e+02
+Column=000064960 Fraction=65.0% Gflops=5.339e+02
+Column=000065280 Fraction=65.3% Gflops=5.339e+02
+Column=000065600 Fraction=65.6% Gflops=5.338e+02
+Column=000065920 Fraction=65.9% Gflops=5.338e+02
+Column=000066240 Fraction=66.2% Gflops=5.337e+02
+Column=000066560 Fraction=66.6% Gflops=5.337e+02
+Column=000066880 Fraction=66.9% Gflops=5.336e+02
+Column=000067200 Fraction=67.2% Gflops=5.335e+02
+Column=000067520 Fraction=67.5% Gflops=5.335e+02
+Column=000067840 Fraction=67.8% Gflops=5.334e+02
+Column=000068160 Fraction=68.2% Gflops=5.334e+02
+Column=000068480 Fraction=68.5% Gflops=5.333e+02
+Column=000068800 Fraction=68.8% Gflops=5.333e+02
+Column=000069120 Fraction=69.1% Gflops=5.332e+02
+Column=000069440 Fraction=69.4% Gflops=5.332e+02
+Column=000069760 Fraction=69.8% Gflops=5.331e+02
+Column=000070080 Fraction=70.1% Gflops=5.330e+02
+Column=000070400 Fraction=70.4% Gflops=5.330e+02
+Column=000070720 Fraction=70.7% Gflops=5.329e+02
+Column=000071040 Fraction=71.0% Gflops=5.329e+02
+Column=000071360 Fraction=71.4% Gflops=5.328e+02
+Column=000071680 Fraction=71.7% Gflops=5.328e+02
+Column=000072000 Fraction=72.0% Gflops=5.327e+02
+Column=000072320 Fraction=72.3% Gflops=5.327e+02
+Column=000072640 Fraction=72.6% Gflops=5.326e+02
+Column=000072960 Fraction=73.0% Gflops=5.326e+02
+Column=000073280 Fraction=73.3% Gflops=5.325e+02
+Column=000073600 Fraction=73.6% Gflops=5.325e+02
+Column=000073920 Fraction=73.9% Gflops=5.325e+02
+Column=000074240 Fraction=74.2% Gflops=5.324e+02
+Column=000074560 Fraction=74.6% Gflops=5.324e+02
+Column=000074880 Fraction=74.9% Gflops=5.323e+02
+Column=000075200 Fraction=75.2% Gflops=5.323e+02
+Column=000075520 Fraction=75.5% Gflops=5.322e+02
+Column=000075840 Fraction=75.8% Gflops=5.322e+02
+Column=000076160 Fraction=76.2% Gflops=5.321e+02
+Column=000076480 Fraction=76.5% Gflops=5.321e+02
+Column=000076800 Fraction=76.8% Gflops=5.320e+02
+Column=000077120 Fraction=77.1% Gflops=5.320e+02
+Column=000077440 Fraction=77.4% Gflops=5.320e+02
+Column=000077760 Fraction=77.8% Gflops=5.319e+02
+Column=000078080 Fraction=78.1% Gflops=5.319e+02
+Column=000078400 Fraction=78.4% Gflops=5.318e+02
+Column=000078720 Fraction=78.7% Gflops=5.318e+02
+Column=000079040 Fraction=79.0% Gflops=5.317e+02
+Column=000079360 Fraction=79.4% Gflops=5.317e+02
+Column=000079680 Fraction=79.7% Gflops=5.317e+02
+Column=000080000 Fraction=80.0% Gflops=5.316e+02
+Column=000080320 Fraction=80.3% Gflops=5.316e+02
+Column=000080640 Fraction=80.6% Gflops=5.315e+02
+Column=000080960 Fraction=81.0% Gflops=5.315e+02
+Column=000081280 Fraction=81.3% Gflops=5.315e+02
+Column=000081600 Fraction=81.6% Gflops=5.314e+02
+Column=000081920 Fraction=81.9% Gflops=5.314e+02
+Column=000082240 Fraction=82.2% Gflops=5.313e+02
+Column=000082560 Fraction=82.6% Gflops=5.313e+02
+Column=000082880 Fraction=82.9% Gflops=5.313e+02
+Column=000083200 Fraction=83.2% Gflops=5.312e+02
+Column=000083520 Fraction=83.5% Gflops=5.312e+02
+Column=000083840 Fraction=83.8% Gflops=5.312e+02
+Column=000084160 Fraction=84.2% Gflops=5.311e+02
+Column=000084480 Fraction=84.5% Gflops=5.311e+02
+Column=000084800 Fraction=84.8% Gflops=5.310e+02
+Column=000085120 Fraction=85.1% Gflops=5.310e+02
+Column=000085440 Fraction=85.4% Gflops=5.310e+02
+Column=000085760 Fraction=85.8% Gflops=5.309e+02
+Column=000086080 Fraction=86.1% Gflops=5.309e+02
+Column=000086400 Fraction=86.4% Gflops=5.309e+02
+Column=000086720 Fraction=86.7% Gflops=5.308e+02
+Column=000087040 Fraction=87.0% Gflops=5.308e+02
+Column=000087360 Fraction=87.4% Gflops=5.308e+02
+Column=000087680 Fraction=87.7% Gflops=5.307e+02
+Column=000088000 Fraction=88.0% Gflops=5.307e+02
+Column=000088320 Fraction=88.3% Gflops=5.307e+02
+Column=000088640 Fraction=88.6% Gflops=5.307e+02
+Column=000088960 Fraction=89.0% Gflops=5.306e+02
+Column=000089280 Fraction=89.3% Gflops=5.306e+02
+Column=000089600 Fraction=89.6% Gflops=5.306e+02
+Column=000089920 Fraction=89.9% Gflops=5.305e+02
+Column=000090240 Fraction=90.2% Gflops=5.305e+02
+Column=000090560 Fraction=90.6% Gflops=5.305e+02
+Column=000090880 Fraction=90.9% Gflops=5.305e+02
+Column=000091200 Fraction=91.2% Gflops=5.304e+02
+Column=000091520 Fraction=91.5% Gflops=5.304e+02
+Column=000091840 Fraction=91.8% Gflops=5.304e+02
+Column=000092160 Fraction=92.2% Gflops=5.304e+02
+Column=000092480 Fraction=92.5% Gflops=5.304e+02
+Column=000092800 Fraction=92.8% Gflops=5.304e+02
+Column=000093120 Fraction=93.1% Gflops=5.303e+02
+Column=000093440 Fraction=93.4% Gflops=5.303e+02
+Column=000093760 Fraction=93.8% Gflops=5.303e+02
+Column=000094080 Fraction=94.1% Gflops=5.303e+02
+Column=000094400 Fraction=94.4% Gflops=5.303e+02
+Column=000094720 Fraction=94.7% Gflops=5.302e+02
+Column=000095040 Fraction=95.0% Gflops=5.302e+02
+Column=000095360 Fraction=95.4% Gflops=5.302e+02
+Column=000095680 Fraction=95.7% Gflops=5.302e+02
+Column=000096000 Fraction=96.0% Gflops=5.302e+02
+Column=000096320 Fraction=96.3% Gflops=5.302e+02
+Column=000096640 Fraction=96.6% Gflops=5.302e+02
+Column=000096960 Fraction=97.0% Gflops=5.302e+02
+Column=000097280 Fraction=97.3% Gflops=5.302e+02
+Column=000097600 Fraction=97.6% Gflops=5.301e+02
+Column=000097920 Fraction=97.9% Gflops=5.301e+02
+Column=000098240 Fraction=98.2% Gflops=5.301e+02
+Column=000098560 Fraction=98.6% Gflops=5.301e+02
+Column=000098880 Fraction=98.9% Gflops=5.301e+02
+Column=000099200 Fraction=99.2% Gflops=5.301e+02
+Column=000099520 Fraction=99.5% Gflops=5.301e+02
+Column=000099840 Fraction=99.8% Gflops=5.301e+02
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR10L2L2      100000   320     1     2            1255.21             5.3113e+02
+HPL_pdgesv() start time Thu May 19 10:13:43 2022
+
+HPL_pdgesv() end time   Thu May 19 10:34:41 2022
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               6.83
++ Max aggregated wall time pfact . . :               1.90
++ Max aggregated wall time mxswp . . :               0.55
+Max aggregated wall time update  . . :            1243.75
++ Max aggregated wall time laswp . . :              27.81
+Max aggregated wall time up tr sv  . :               0.53
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   1.72249247e-03 ...... PASSED
+Column=000000352 Fraction= 0.4% Gflops=1.846e+04
+Column=000000704 Fraction= 0.7% Gflops=1.059e+03
+Column=000001056 Fraction= 1.1% Gflops=8.011e+02
+Column=000001408 Fraction= 1.4% Gflops=7.164e+02
+Column=000001760 Fraction= 1.8% Gflops=6.710e+02
+Column=000002112 Fraction= 2.1% Gflops=6.459e+02
+Column=000002464 Fraction= 2.5% Gflops=6.273e+02
+Column=000002816 Fraction= 2.8% Gflops=6.156e+02
+Column=000003168 Fraction= 3.2% Gflops=6.059e+02
+Column=000003520 Fraction= 3.5% Gflops=5.991e+02
+Column=000003872 Fraction= 3.9% Gflops=5.930e+02
+Column=000004224 Fraction= 4.2% Gflops=5.885e+02
+Column=000004576 Fraction= 4.6% Gflops=5.839e+02
+Column=000004928 Fraction= 4.9% Gflops=5.809e+02
+Column=000005280 Fraction= 5.3% Gflops=5.778e+02
+Column=000005632 Fraction= 5.6% Gflops=5.755e+02
+Column=000005984 Fraction= 6.0% Gflops=5.729e+02
+Column=000006336 Fraction= 6.3% Gflops=5.711e+02
+Column=000006688 Fraction= 6.7% Gflops=5.690e+02
+Column=000007040 Fraction= 7.0% Gflops=5.676e+02
+Column=000007392 Fraction= 7.4% Gflops=5.658e+02
+Column=000007744 Fraction= 7.7% Gflops=5.648e+02
+Column=000008096 Fraction= 8.1% Gflops=5.635e+02
+Column=000008448 Fraction= 8.4% Gflops=5.625e+02
+Column=000008800 Fraction= 8.8% Gflops=5.613e+02
+Column=000009152 Fraction= 9.2% Gflops=5.605e+02
+Column=000009504 Fraction= 9.5% Gflops=5.595e+02
+Column=000009856 Fraction= 9.9% Gflops=5.589e+02
+Column=000010208 Fraction=10.2% Gflops=5.580e+02
+Column=000010560 Fraction=10.6% Gflops=5.575e+02
+Column=000010912 Fraction=10.9% Gflops=5.568e+02
+Column=000011264 Fraction=11.3% Gflops=5.563e+02
+Column=000011616 Fraction=11.6% Gflops=5.557e+02
+Column=000011968 Fraction=12.0% Gflops=5.552e+02
+Column=000012320 Fraction=12.3% Gflops=5.545e+02
+Column=000012672 Fraction=12.7% Gflops=5.542e+02
+Column=000013024 Fraction=13.0% Gflops=5.537e+02
+Column=000013376 Fraction=13.4% Gflops=5.533e+02
+Column=000013728 Fraction=13.7% Gflops=5.527e+02
+Column=000014080 Fraction=14.1% Gflops=5.524e+02
+Column=000014432 Fraction=14.4% Gflops=5.520e+02
+Column=000014784 Fraction=14.8% Gflops=5.517e+02
+Column=000015136 Fraction=15.1% Gflops=5.513e+02
+Column=000015488 Fraction=15.5% Gflops=5.511e+02
+Column=000015840 Fraction=15.8% Gflops=5.507e+02
+Column=000016192 Fraction=16.2% Gflops=5.505e+02
+Column=000016544 Fraction=16.5% Gflops=5.500e+02
+Column=000016896 Fraction=16.9% Gflops=5.498e+02
+Column=000017248 Fraction=17.2% Gflops=5.494e+02
+Column=000017600 Fraction=17.6% Gflops=5.492e+02
+Column=000017952 Fraction=18.0% Gflops=5.488e+02
+Column=000018304 Fraction=18.3% Gflops=5.486e+02
+Column=000018656 Fraction=18.7% Gflops=5.483e+02
+Column=000019008 Fraction=19.0% Gflops=5.481e+02
+Column=000019360 Fraction=19.4% Gflops=5.479e+02
+Column=000019712 Fraction=19.7% Gflops=5.477e+02
+Column=000020064 Fraction=20.1% Gflops=5.474e+02
+Column=000020416 Fraction=20.4% Gflops=5.472e+02
+Column=000020768 Fraction=20.8% Gflops=5.470e+02
+Column=000021120 Fraction=21.1% Gflops=5.468e+02
+Column=000021472 Fraction=21.5% Gflops=5.465e+02
+Column=000021824 Fraction=21.8% Gflops=5.464e+02
+Column=000022176 Fraction=22.2% Gflops=5.461e+02
+Column=000022528 Fraction=22.5% Gflops=5.460e+02
+Column=000022880 Fraction=22.9% Gflops=5.458e+02
+Column=000023232 Fraction=23.2% Gflops=5.457e+02
+Column=000023584 Fraction=23.6% Gflops=5.455e+02
+Column=000023936 Fraction=23.9% Gflops=5.454e+02
+Column=000024288 Fraction=24.3% Gflops=5.452e+02
+Column=000024640 Fraction=24.6% Gflops=5.450e+02
+Column=000024992 Fraction=25.0% Gflops=5.448e+02
+Column=000025344 Fraction=25.3% Gflops=5.447e+02
+Column=000025696 Fraction=25.7% Gflops=5.445e+02
+Column=000026048 Fraction=26.0% Gflops=5.444e+02
+Column=000026400 Fraction=26.4% Gflops=5.442e+02
+Column=000026752 Fraction=26.8% Gflops=5.441e+02
+Column=000027104 Fraction=27.1% Gflops=5.439e+02
+Column=000027456 Fraction=27.5% Gflops=5.438e+02
+Column=000027808 Fraction=27.8% Gflops=5.436e+02
+Column=000028160 Fraction=28.2% Gflops=5.435e+02
+Column=000028512 Fraction=28.5% Gflops=5.434e+02
+Column=000028864 Fraction=28.9% Gflops=5.433e+02
+Column=000029216 Fraction=29.2% Gflops=5.431e+02
+Column=000029568 Fraction=29.6% Gflops=5.430e+02
+Column=000029920 Fraction=29.9% Gflops=5.428e+02
+Column=000030272 Fraction=30.3% Gflops=5.428e+02
+Column=000030624 Fraction=30.6% Gflops=5.426e+02
+Column=000030976 Fraction=31.0% Gflops=5.425e+02
+Column=000031328 Fraction=31.3% Gflops=5.423e+02
+Column=000031680 Fraction=31.7% Gflops=5.423e+02
+Column=000032032 Fraction=32.0% Gflops=5.421e+02
+Column=000032384 Fraction=32.4% Gflops=5.420e+02
+Column=000032736 Fraction=32.7% Gflops=5.419e+02
+Column=000033088 Fraction=33.1% Gflops=5.418e+02
+Column=000033440 Fraction=33.4% Gflops=5.417e+02
+Column=000033792 Fraction=33.8% Gflops=5.416e+02
+Column=000034144 Fraction=34.1% Gflops=5.415e+02
+Column=000034496 Fraction=34.5% Gflops=5.414e+02
+Column=000034848 Fraction=34.8% Gflops=5.413e+02
+Column=000035200 Fraction=35.2% Gflops=5.412e+02
+Column=000035552 Fraction=35.6% Gflops=5.411e+02
+Column=000035904 Fraction=35.9% Gflops=5.410e+02
+Column=000036256 Fraction=36.3% Gflops=5.409e+02
+Column=000036608 Fraction=36.6% Gflops=5.408e+02
+Column=000036960 Fraction=37.0% Gflops=5.407e+02
+Column=000037312 Fraction=37.3% Gflops=5.406e+02
+Column=000037664 Fraction=37.7% Gflops=5.405e+02
+Column=000038016 Fraction=38.0% Gflops=5.404e+02
+Column=000038368 Fraction=38.4% Gflops=5.403e+02
+Column=000038720 Fraction=38.7% Gflops=5.402e+02
+Column=000039072 Fraction=39.1% Gflops=5.401e+02
+Column=000039424 Fraction=39.4% Gflops=5.400e+02
+Column=000039776 Fraction=39.8% Gflops=5.399e+02
+Column=000040128 Fraction=40.1% Gflops=5.398e+02
+Column=000040480 Fraction=40.5% Gflops=5.397e+02
+Column=000040832 Fraction=40.8% Gflops=5.397e+02
+Column=000041184 Fraction=41.2% Gflops=5.396e+02
+Column=000041536 Fraction=41.5% Gflops=5.395e+02
+Column=000041888 Fraction=41.9% Gflops=5.394e+02
+Column=000042240 Fraction=42.2% Gflops=5.393e+02
+Column=000042592 Fraction=42.6% Gflops=5.391e+02
+Column=000042944 Fraction=42.9% Gflops=5.390e+02
+Column=000043296 Fraction=43.3% Gflops=5.389e+02
+Column=000043648 Fraction=43.6% Gflops=5.389e+02
+Column=000044000 Fraction=44.0% Gflops=5.387e+02
+Column=000044352 Fraction=44.4% Gflops=5.387e+02
+Column=000044704 Fraction=44.7% Gflops=5.385e+02
+Column=000045056 Fraction=45.1% Gflops=5.385e+02
+Column=000045408 Fraction=45.4% Gflops=5.383e+02
+Column=000045760 Fraction=45.8% Gflops=5.383e+02
+Column=000046112 Fraction=46.1% Gflops=5.381e+02
+Column=000046464 Fraction=46.5% Gflops=5.381e+02
+Column=000046816 Fraction=46.8% Gflops=5.380e+02
+Column=000047168 Fraction=47.2% Gflops=5.379e+02
+Column=000047520 Fraction=47.5% Gflops=5.378e+02
+Column=000047872 Fraction=47.9% Gflops=5.377e+02
+Column=000048224 Fraction=48.2% Gflops=5.376e+02
+Column=000048576 Fraction=48.6% Gflops=5.375e+02
+Column=000048928 Fraction=48.9% Gflops=5.374e+02
+Column=000049280 Fraction=49.3% Gflops=5.374e+02
+Column=000049632 Fraction=49.6% Gflops=5.372e+02
+Column=000049984 Fraction=50.0% Gflops=5.372e+02
+Column=000050336 Fraction=50.3% Gflops=5.371e+02
+Column=000050688 Fraction=50.7% Gflops=5.370e+02
+Column=000051040 Fraction=51.0% Gflops=5.369e+02
+Column=000051392 Fraction=51.4% Gflops=5.369e+02
+Column=000051744 Fraction=51.7% Gflops=5.367e+02
+Column=000052096 Fraction=52.1% Gflops=5.367e+02
+Column=000052448 Fraction=52.4% Gflops=5.366e+02
+Column=000052800 Fraction=52.8% Gflops=5.365e+02
+Column=000053152 Fraction=53.2% Gflops=5.364e+02
+Column=000053504 Fraction=53.5% Gflops=5.364e+02
+Column=000053856 Fraction=53.9% Gflops=5.363e+02
+Column=000054208 Fraction=54.2% Gflops=5.362e+02
+Column=000054560 Fraction=54.6% Gflops=5.361e+02
+Column=000054912 Fraction=54.9% Gflops=5.361e+02
+Column=000055264 Fraction=55.3% Gflops=5.360e+02
+Column=000055616 Fraction=55.6% Gflops=5.359e+02
+Column=000055968 Fraction=56.0% Gflops=5.358e+02
+Column=000056320 Fraction=56.3% Gflops=5.358e+02
+Column=000056672 Fraction=56.7% Gflops=5.357e+02
+Column=000057024 Fraction=57.0% Gflops=5.357e+02
+Column=000057376 Fraction=57.4% Gflops=5.356e+02
+Column=000057728 Fraction=57.7% Gflops=5.355e+02
+Column=000058080 Fraction=58.1% Gflops=5.354e+02
+Column=000058432 Fraction=58.4% Gflops=5.354e+02
+Column=000058784 Fraction=58.8% Gflops=5.353e+02
+Column=000059136 Fraction=59.1% Gflops=5.353e+02
+Column=000059488 Fraction=59.5% Gflops=5.352e+02
+Column=000059840 Fraction=59.8% Gflops=5.352e+02
+Column=000060192 Fraction=60.2% Gflops=5.351e+02
+Column=000060544 Fraction=60.5% Gflops=5.350e+02
+Column=000060896 Fraction=60.9% Gflops=5.349e+02
+Column=000061248 Fraction=61.2% Gflops=5.349e+02
+Column=000061600 Fraction=61.6% Gflops=5.348e+02
+Column=000061952 Fraction=62.0% Gflops=5.348e+02
+Column=000062304 Fraction=62.3% Gflops=5.347e+02
+Column=000062656 Fraction=62.7% Gflops=5.346e+02
+Column=000063008 Fraction=63.0% Gflops=5.345e+02
+Column=000063360 Fraction=63.4% Gflops=5.345e+02
+Column=000063712 Fraction=63.7% Gflops=5.344e+02
+Column=000064064 Fraction=64.1% Gflops=5.344e+02
+Column=000064416 Fraction=64.4% Gflops=5.343e+02
+Column=000064768 Fraction=64.8% Gflops=5.342e+02
+Column=000065120 Fraction=65.1% Gflops=5.341e+02
+Column=000065472 Fraction=65.5% Gflops=5.341e+02
+Column=000065824 Fraction=65.8% Gflops=5.340e+02
+Column=000066176 Fraction=66.2% Gflops=5.340e+02
+Column=000066528 Fraction=66.5% Gflops=5.339e+02
+Column=000066880 Fraction=66.9% Gflops=5.338e+02
+Column=000067232 Fraction=67.2% Gflops=5.337e+02
+Column=000067584 Fraction=67.6% Gflops=5.337e+02
+Column=000067936 Fraction=67.9% Gflops=5.336e+02
+Column=000068288 Fraction=68.3% Gflops=5.336e+02
+Column=000068640 Fraction=68.6% Gflops=5.335e+02
+Column=000068992 Fraction=69.0% Gflops=5.335e+02
+Column=000069344 Fraction=69.3% Gflops=5.334e+02
+Column=000069696 Fraction=69.7% Gflops=5.333e+02
+Column=000070048 Fraction=70.0% Gflops=5.333e+02
+Column=000070400 Fraction=70.4% Gflops=5.332e+02
+Column=000070752 Fraction=70.8% Gflops=5.331e+02
+Column=000071104 Fraction=71.1% Gflops=5.331e+02
+Column=000071456 Fraction=71.5% Gflops=5.330e+02
+Column=000071808 Fraction=71.8% Gflops=5.330e+02
+Column=000072160 Fraction=72.2% Gflops=5.329e+02
+Column=000072512 Fraction=72.5% Gflops=5.329e+02
+Column=000072864 Fraction=72.9% Gflops=5.328e+02
+Column=000073216 Fraction=73.2% Gflops=5.327e+02
+Column=000073568 Fraction=73.6% Gflops=5.327e+02
+Column=000073920 Fraction=73.9% Gflops=5.326e+02
+Column=000074272 Fraction=74.3% Gflops=5.326e+02
+Column=000074624 Fraction=74.6% Gflops=5.325e+02
+Column=000074976 Fraction=75.0% Gflops=5.325e+02
+Column=000075328 Fraction=75.3% Gflops=5.324e+02
+Column=000075680 Fraction=75.7% Gflops=5.324e+02
+Column=000076032 Fraction=76.0% Gflops=5.323e+02
+Column=000076384 Fraction=76.4% Gflops=5.323e+02
+Column=000076736 Fraction=76.7% Gflops=5.322e+02
+Column=000077088 Fraction=77.1% Gflops=5.321e+02
+Column=000077440 Fraction=77.4% Gflops=5.321e+02
+Column=000077792 Fraction=77.8% Gflops=5.320e+02
+Column=000078144 Fraction=78.1% Gflops=5.320e+02
+Column=000078496 Fraction=78.5% Gflops=5.320e+02
+Column=000078848 Fraction=78.8% Gflops=5.319e+02
+Column=000079200 Fraction=79.2% Gflops=5.319e+02
+Column=000079552 Fraction=79.6% Gflops=5.318e+02
+Column=000079904 Fraction=79.9% Gflops=5.318e+02
+Column=000080256 Fraction=80.3% Gflops=5.317e+02
+Column=000080608 Fraction=80.6% Gflops=5.317e+02
+Column=000080960 Fraction=81.0% Gflops=5.316e+02
+Column=000081312 Fraction=81.3% Gflops=5.316e+02
+Column=000081664 Fraction=81.7% Gflops=5.315e+02
+Column=000082016 Fraction=82.0% Gflops=5.315e+02
+Column=000082368 Fraction=82.4% Gflops=5.315e+02
+Column=000082720 Fraction=82.7% Gflops=5.314e+02
+Column=000083072 Fraction=83.1% Gflops=5.314e+02
+Column=000083424 Fraction=83.4% Gflops=5.313e+02
+Column=000083776 Fraction=83.8% Gflops=5.313e+02
+Column=000084128 Fraction=84.1% Gflops=5.313e+02
+Column=000084480 Fraction=84.5% Gflops=5.312e+02
+Column=000084832 Fraction=84.8% Gflops=5.312e+02
+Column=000085184 Fraction=85.2% Gflops=5.311e+02
+Column=000085536 Fraction=85.5% Gflops=5.311e+02
+Column=000085888 Fraction=85.9% Gflops=5.311e+02
+Column=000086240 Fraction=86.2% Gflops=5.310e+02
+Column=000086592 Fraction=86.6% Gflops=5.310e+02
+Column=000086944 Fraction=86.9% Gflops=5.310e+02
+Column=000087296 Fraction=87.3% Gflops=5.309e+02
+Column=000087648 Fraction=87.6% Gflops=5.309e+02
+Column=000088000 Fraction=88.0% Gflops=5.309e+02
+Column=000088352 Fraction=88.4% Gflops=5.308e+02
+Column=000088704 Fraction=88.7% Gflops=5.308e+02
+Column=000089056 Fraction=89.1% Gflops=5.308e+02
+Column=000089408 Fraction=89.4% Gflops=5.307e+02
+Column=000089760 Fraction=89.8% Gflops=5.307e+02
+Column=000090112 Fraction=90.1% Gflops=5.307e+02
+Column=000090464 Fraction=90.5% Gflops=5.307e+02
+Column=000090816 Fraction=90.8% Gflops=5.306e+02
+Column=000091168 Fraction=91.2% Gflops=5.306e+02
+Column=000091520 Fraction=91.5% Gflops=5.306e+02
+Column=000091872 Fraction=91.9% Gflops=5.306e+02
+Column=000092224 Fraction=92.2% Gflops=5.305e+02
+Column=000092576 Fraction=92.6% Gflops=5.305e+02
+Column=000092928 Fraction=92.9% Gflops=5.305e+02
+Column=000093280 Fraction=93.3% Gflops=5.305e+02
+Column=000093632 Fraction=93.6% Gflops=5.305e+02
+Column=000093984 Fraction=94.0% Gflops=5.304e+02
+Column=000094336 Fraction=94.3% Gflops=5.304e+02
+Column=000094688 Fraction=94.7% Gflops=5.304e+02
+Column=000095040 Fraction=95.0% Gflops=5.304e+02
+Column=000095392 Fraction=95.4% Gflops=5.304e+02
+Column=000095744 Fraction=95.7% Gflops=5.304e+02
+Column=000096096 Fraction=96.1% Gflops=5.303e+02
+Column=000096448 Fraction=96.4% Gflops=5.303e+02
+Column=000096800 Fraction=96.8% Gflops=5.303e+02
+Column=000097152 Fraction=97.2% Gflops=5.303e+02
+Column=000097504 Fraction=97.5% Gflops=5.303e+02
+Column=000097856 Fraction=97.9% Gflops=5.303e+02
+Column=000098208 Fraction=98.2% Gflops=5.303e+02
+Column=000098560 Fraction=98.6% Gflops=5.303e+02
+Column=000098912 Fraction=98.9% Gflops=5.303e+02
+Column=000099264 Fraction=99.3% Gflops=5.303e+02
+Column=000099616 Fraction=99.6% Gflops=5.303e+02
+Column=000099968 Fraction=100.0% Gflops=5.303e+02
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR10L2L2      100000   352     1     2            1254.86             5.3128e+02
+HPL_pdgesv() start time Thu May 19 10:37:03 2022
+
+HPL_pdgesv() end time   Thu May 19 10:58:01 2022
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               7.15
++ Max aggregated wall time pfact . . :               1.94
++ Max aggregated wall time mxswp . . :               0.57
+Max aggregated wall time update  . . :            1243.04
++ Max aggregated wall time laswp . . :              27.68
+Max aggregated wall time up tr sv  . :               0.53
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   1.60588527e-03 ...... PASSED
+================================================================================
+
+Finished      4 tests with the following results:
+              4 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================

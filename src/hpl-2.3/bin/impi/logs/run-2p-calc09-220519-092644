@@ -1,0 +1,72 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.5  Build 20211102 (id: 9279b7d62)
+[0] MPI startup(): Copyright (C) 2003-2021 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.7.2
+[0] MPI startup(): used libfabric version support is deprecated. Please use Libfabricv1.9 or above
+[0] MPI startup(): libfabric provider: tcp;ofi_rxm
+[0] MPI startup(): Load tuning file: "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi_tcp-ofi-rxm.dat"
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       6433     calc16     {0,1,2,3,4,5,6,7,8,9}
+[0] MPI startup(): 1       6277     calc15     {0,1,2,3,4,5,6,7,8,9}
+[0] MPI startup(): I_MPI_LIBRARY_KIND=release_mt
+[0] MPI startup(): I_MPI_ROOT=/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_PIN_DOMAIN=auto
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_DEBUG=10
+[0] MPI startup(): threading: mode: direct
+[0] MPI startup(): threading: vcis: 1
+[0] MPI startup(): threading: app_threads: 1
+[0] MPI startup(): threading: runtime: generic
+[0] MPI startup(): threading: is_threaded: 0
+[0] MPI startup(): threading: async_progress: 0
+[0] MPI startup(): threading: num_pools: 64
+[0] MPI startup(): threading: lock_level: global
+[0] MPI startup(): threading: enable_sep: 0
+[0] MPI startup(): threading: direct_recv: 1
+[0] MPI startup(): threading: zero_op_flags: 0
+[0] MPI startup(): threading: num_am_buffers: 8
+[0] MPI startup(): threading: library is built with per-vci thread granularity
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :  100000 
+NB     :     256      288      320      352 
+PMAP   : Row-major process mapping
+P      :       1 
+Q      :       2 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :    Left 
+BCAST  :   1ring   1ringM    2ring 
+DEPTH  :       1 
+SWAP   : Mix (threshold = 64)
+L1     : no-transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               2.220446e-16
+- Computational tests pass if scaled residuals are less than                16.0
+

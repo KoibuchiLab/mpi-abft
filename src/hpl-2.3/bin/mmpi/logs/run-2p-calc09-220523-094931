@@ -1,0 +1,5 @@
+[mpiexec@calc09] match_arg (utils/args/args.c:163): unrecognized argument npernode
+[mpiexec@calc09] HYDU_parse_array (utils/args/args.c:178): argument matching returned error
+[mpiexec@calc09] parse_args (ui/mpich/utils.c:1603): error parsing input array
+[mpiexec@calc09] HYD_uii_mpx_get_parameters (ui/mpich/utils.c:1655): unable to parse user arguments
+[mpiexec@calc09] main (ui/mpich/mpiexec.c:128): error parsing parameters

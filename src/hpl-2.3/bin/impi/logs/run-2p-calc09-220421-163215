@@ -1,0 +1,35 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.5  Build 20211102 (id: 9279b7d62)
+[0] MPI startup(): Copyright (C) 2003-2021 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): shm segment size (1307 MB per rank) * (2 local ranks) = 2615 MB total
+[0] MPI startup(): libfabric version: 1.13.2rc1-impi
+[0] MPI startup(): libfabric provider: mlx
+[0] MPI startup(): File "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi_mlx_10.dat" not found
+[0] MPI startup(): Load tuning file: "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi.dat"
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       24020    calc09     {0,1,2,3,4,10,11,12,13,14}
+[0] MPI startup(): 1       24021    calc09     {5,6,7,8,9,15,16,17,18,19}
+[0] MPI startup(): I_MPI_ROOT=/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_PIN_DOMAIN=auto
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_DEBUG=10
+[0] MPI startup(): threading: mode: direct
+[0] MPI startup(): threading: vcis: 1
+[0] MPI startup(): threading: app_threads: 1
+[0] MPI startup(): threading: runtime: generic
+[0] MPI startup(): threading: is_threaded: 0
+[0] MPI startup(): threading: async_progress: 0
+[0] MPI startup(): threading: num_pools: 64
+[0] MPI startup(): threading: lock_level: global
+[0] MPI startup(): threading: enable_sep: 0
+[0] MPI startup(): threading: direct_recv: 1
+[0] MPI startup(): threading: zero_op_flags: 1
+[0] MPI startup(): threading: num_am_buffers: 1
+[0] MPI startup(): threading: library is built with per-vci thread granularity
+HPL ERROR from process # 0, on line 395 of function HPL_pdinfo:
+>>> Value of P less than 1 <<<
+
+HPL ERROR from process # 0, on line 621 of function HPL_pdinfo:
+>>> Illegal input in file HPL.dat. Exiting ... <<<
+

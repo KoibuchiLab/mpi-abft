@@ -1,0 +1,156 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.5  Build 20211102 (id: 9279b7d62)
+[0] MPI startup(): Copyright (C) 2003-2021 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.13.2rc1-impi
+[0] MPI startup(): libfabric provider: mlx
+[0] MPI startup(): File "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi_mlx_10.dat" not found
+[0] MPI startup(): Load tuning file: "/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1/etc/tuning_skx_shm-ofi.dat"
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       27286    calc09     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 1       24439    calc10     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 2       23458    calc11     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 3       22556    calc12     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 4       22640    calc13     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 5       22675    calc14     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 6       22718    calc15     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): 7       23071    calc16     {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19}
+[0] MPI startup(): I_MPI_ROOT=/home/proj/atnw/honda/intel/oneapi/mpi/2021.5.1
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_PIN_DOMAIN=auto
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_DEBUG=10
+[0] MPI startup(): threading: mode: direct
+[0] MPI startup(): threading: vcis: 1
+[0] MPI startup(): threading: app_threads: 1
+[0] MPI startup(): threading: runtime: generic
+[0] MPI startup(): threading: is_threaded: 0
+[0] MPI startup(): threading: async_progress: 0
+[0] MPI startup(): threading: num_pools: 64
+[0] MPI startup(): threading: lock_level: global
+[0] MPI startup(): threading: enable_sep: 0
+[0] MPI startup(): threading: direct_recv: 1
+[0] MPI startup(): threading: zero_op_flags: 1
+[0] MPI startup(): threading: num_am_buffers: 1
+[0] MPI startup(): threading: library is built with per-vci thread granularity
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :   20000 
+NB     :     384 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       4 
+PFACT  :    Left 
+NBMIN  :       2 
+NDIV   :       2 
+RFACT  :    Left 
+BCAST  :   1ring 
+DEPTH  :       0 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               2.220446e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Column=000000384 Fraction= 1.9% Gflops=1.203e+03
+Column=000000768 Fraction= 3.8% Gflops=8.806e+02
+Column=000001152 Fraction= 5.8% Gflops=8.428e+02
+Column=000001536 Fraction= 7.7% Gflops=8.134e+02
+Column=000001920 Fraction= 9.6% Gflops=8.196e+02
+Column=000002304 Fraction=11.5% Gflops=8.058e+02
+Column=000002688 Fraction=13.4% Gflops=8.121e+02
+Column=000003072 Fraction=15.4% Gflops=8.005e+02
+Column=000003456 Fraction=17.3% Gflops=8.021e+02
+Column=000003840 Fraction=19.2% Gflops=7.937e+02
+Column=000004224 Fraction=21.1% Gflops=7.951e+02
+Column=000004608 Fraction=23.0% Gflops=7.879e+02
+Column=000004992 Fraction=25.0% Gflops=7.887e+02
+Column=000005376 Fraction=26.9% Gflops=7.828e+02
+Column=000005760 Fraction=28.8% Gflops=7.834e+02
+Column=000006144 Fraction=30.7% Gflops=7.779e+02
+Column=000006528 Fraction=32.6% Gflops=7.767e+02
+Column=000006912 Fraction=34.6% Gflops=7.709e+02
+Column=000007296 Fraction=36.5% Gflops=7.733e+02
+Column=000007680 Fraction=38.4% Gflops=7.695e+02
+Column=000008064 Fraction=40.3% Gflops=7.682e+02
+Column=000008448 Fraction=42.2% Gflops=7.645e+02
+Column=000008832 Fraction=44.2% Gflops=7.656e+02
+Column=000009216 Fraction=46.1% Gflops=7.617e+02
+Column=000009600 Fraction=48.0% Gflops=7.600e+02
+Column=000009984 Fraction=49.9% Gflops=7.563e+02
+Column=000010368 Fraction=51.8% Gflops=7.568e+02
+Column=000010752 Fraction=53.8% Gflops=7.531e+02
+Column=000011136 Fraction=55.7% Gflops=7.510e+02
+Column=000011520 Fraction=57.6% Gflops=7.480e+02
+Column=000011904 Fraction=59.5% Gflops=7.480e+02
+Column=000012288 Fraction=61.4% Gflops=7.444e+02
+Column=000012672 Fraction=63.4% Gflops=7.424e+02
+Column=000013056 Fraction=65.3% Gflops=7.394e+02
+Column=000013440 Fraction=67.2% Gflops=7.388e+02
+Column=000013824 Fraction=69.1% Gflops=7.353e+02
+Column=000014208 Fraction=71.0% Gflops=7.332e+02
+Column=000014592 Fraction=73.0% Gflops=7.304e+02
+Column=000014976 Fraction=74.9% Gflops=7.291e+02
+Column=000015360 Fraction=76.8% Gflops=7.259e+02
+Column=000015744 Fraction=78.7% Gflops=7.236e+02
+Column=000016128 Fraction=80.6% Gflops=7.212e+02
+Column=000016512 Fraction=82.6% Gflops=7.196e+02
+Column=000016896 Fraction=84.5% Gflops=7.169e+02
+Column=000017280 Fraction=86.4% Gflops=7.149e+02
+Column=000017664 Fraction=88.3% Gflops=7.129e+02
+Column=000018048 Fraction=90.2% Gflops=7.112e+02
+Column=000018432 Fraction=92.2% Gflops=7.089e+02
+Column=000018816 Fraction=94.1% Gflops=7.074e+02
+Column=000019200 Fraction=96.0% Gflops=7.056e+02
+Column=000019584 Fraction=97.9% Gflops=7.042e+02
+Column=000019968 Fraction=99.8% Gflops=7.025e+02
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR00L2L2       20000   384     2     4               7.59             7.0299e+02
+HPL_pdgesv() start time Thu Apr 21 17:16:47 2022
+
+HPL_pdgesv() end time   Thu Apr 21 17:16:54 2022
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               1.02
++ Max aggregated wall time pfact . . :               0.94
++ Max aggregated wall time mxswp . . :               0.87
+Max aggregated wall time update  . . :               5.83
++ Max aggregated wall time laswp . . :               0.95
+Max aggregated wall time up tr sv  . :               0.01
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   1.59844230e-03 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================

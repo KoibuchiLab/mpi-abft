@@ -1,0 +1,198 @@
+make -f Make.top startup_dir     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+mkdir -p include/ompi
+mkdir -p lib
+mkdir -p lib/ompi
+mkdir -p bin
+mkdir -p bin/ompi
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top startup_src     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/auxil       arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/auxil ; mkdir -p ompi )
+( cd src/auxil/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/blas        arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/blas ; mkdir -p ompi )
+( cd src/blas/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/comm        arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/comm ; mkdir -p ompi )
+( cd src/comm/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/grid        arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/grid ; mkdir -p ompi )
+( cd src/grid/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/panel       arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/panel ; mkdir -p ompi )
+( cd src/panel/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/pauxil      arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/pauxil ; mkdir -p ompi )
+( cd src/pauxil/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/pfact       arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/pfact ; mkdir -p ompi )
+( cd src/pfact/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=src/pgesv       arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/pgesv ; mkdir -p ompi )
+( cd src/pgesv/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top startup_tst     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=testing/matgen  arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd testing/matgen ; mkdir -p ompi )
+( cd testing/matgen/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=testing/timer   arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd testing/timer ; mkdir -p ompi )
+( cd testing/timer/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=testing/pmatgen arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd testing/pmatgen ; mkdir -p ompi )
+( cd testing/pmatgen/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=testing/ptimer  arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd testing/ptimer ; mkdir -p ompi )
+( cd testing/ptimer/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top leaf le=testing/ptest   arch=ompi
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd testing/ptest ; mkdir -p ompi )
+( cd testing/ptest/ompi ; \
+            ln -fs /home/proj/atnw/honda/hpl-2.3/Make.ompi Make.inc )
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top refresh_src     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+cp makes/Make.auxil    src/auxil/ompi/Makefile
+cp makes/Make.blas     src/blas/ompi/Makefile
+cp makes/Make.comm     src/comm/ompi/Makefile
+cp makes/Make.grid     src/grid/ompi/Makefile
+cp makes/Make.panel    src/panel/ompi/Makefile
+cp makes/Make.pauxil   src/pauxil/ompi/Makefile
+cp makes/Make.pfact    src/pfact/ompi/Makefile
+cp makes/Make.pgesv    src/pgesv/ompi/Makefile
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top refresh_tst     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+cp makes/Make.matgen   testing/matgen/ompi/Makefile
+cp makes/Make.timer    testing/timer/ompi/Makefile
+cp makes/Make.pmatgen  testing/pmatgen/ompi/Makefile
+cp makes/Make.ptimer   testing/ptimer/ompi/Makefile
+cp makes/Make.ptest    testing/ptest/ompi/Makefile
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top refresh_src     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+cp makes/Make.auxil    src/auxil/ompi/Makefile
+cp makes/Make.blas     src/blas/ompi/Makefile
+cp makes/Make.comm     src/comm/ompi/Makefile
+cp makes/Make.grid     src/grid/ompi/Makefile
+cp makes/Make.panel    src/panel/ompi/Makefile
+cp makes/Make.pauxil   src/pauxil/ompi/Makefile
+cp makes/Make.pfact    src/pfact/ompi/Makefile
+cp makes/Make.pgesv    src/pgesv/ompi/Makefile
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top refresh_tst     arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+cp makes/Make.matgen   testing/matgen/ompi/Makefile
+cp makes/Make.timer    testing/timer/ompi/Makefile
+cp makes/Make.pmatgen  testing/pmatgen/ompi/Makefile
+cp makes/Make.ptimer   testing/ptimer/ompi/Makefile
+cp makes/Make.ptest    testing/ptest/ompi/Makefile
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top build_src       arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd src/auxil/ompi;         make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/auxil/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/auxil/ompi'
+( cd src/blas/ompi;          make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/blas/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/blas/ompi'
+( cd src/comm/ompi;          make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/comm/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/comm/ompi'
+( cd src/grid/ompi;          make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/grid/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/grid/ompi'
+( cd src/panel/ompi;         make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/panel/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/panel/ompi'
+( cd src/pauxil/ompi;        make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/pauxil/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/pauxil/ompi'
+( cd src/pfact/ompi;         make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/pfact/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/pfact/ompi'
+( cd src/pgesv/ompi;         make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/src/pgesv/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/src/pgesv/ompi'
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make -f Make.top build_tst       arch=ompi
+make[1]: Entering directory `/home/proj/atnw/honda/hpl-2.3'
+( cd testing/matgen/ompi;    make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/testing/matgen/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/testing/matgen/ompi'
+( cd testing/timer/ompi;     make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/testing/timer/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/testing/timer/ompi'
+( cd testing/pmatgen/ompi;   make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/testing/pmatgen/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/testing/pmatgen/ompi'
+( cd testing/ptimer/ompi;    make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/testing/ptimer/ompi'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/testing/ptimer/ompi'
+( cd testing/ptest/ompi;     make )
+make[2]: Entering directory `/home/proj/atnw/honda/hpl-2.3/testing/ptest/ompi'
+mpicc -DAdd__ -DF77_INTEGER=int -DStringSunStyle -DHPL_DETAILED_TIMING -DHPL_PROGRESS_REPORT -DHPL_COPY_L -DHPL_CALL_CBLAS -I/home/proj/atnw/honda/hpl-2.3/include -I/home/proj/atnw/honda/hpl-2.3/include/ompi -I/home/proj/atnw/honda/intel/oneapi/mkl/2022.0.2/include  -qopenmp -O3 -w -static -Wall -Host -qopenmp -o /home/proj/atnw/honda/hpl-2.3/bin/ompi/xhpl HPL_pddriver.o         HPL_pdinfo.o           HPL_pdtest.o /home/proj/atnw/honda/hpl-2.3/lib/ompi/libhpl.a  -L/home/proj/atnw/honda/intel/oneapi/mkl/2022.0.2/mkl/lib/intel64 -Wl,--start-group /home/proj/atnw/honda/intel/oneapi/mkl/2022.0.2/lib/intel64/libmkl_intel_lp64.a /home/proj/atnw/honda/intel/oneapi/mkl/2022.0.2/lib/intel64/libmkl_intel_thread.a /home/proj/atnw/honda/intel/oneapi/mkl/2022.0.2/lib/intel64/libmkl_core.a -L/home/proj/atnw/honda/lib/local -Wl,--end-group -lpthread -ldl 
+ld: cannot find -lpthread
+ld: cannot find -ldl
+ld: cannot find -lm
+ld: cannot find -lpthread
+ld: cannot find -lc
+ld: cannot find -ldl
+ld: cannot find -lc
+make[2]: *** [dexe.grd] Error 1
+make[2]: Leaving directory `/home/proj/atnw/honda/hpl-2.3/testing/ptest/ompi'
+make[1]: *** [build_tst] Error 2
+make[1]: Leaving directory `/home/proj/atnw/honda/hpl-2.3'
+make: *** [build] Error 2
