@@ -1,5 +1,5 @@
 // modified from https://github.com/mperlet/matrix_multiplication
-// Author: huyao 220310
+// Author: huyao 220529
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,7 +9,7 @@
 #include <math.h>
 #include <time.h>
 #include <unistd.h>
-#include "abft.h" // relative to this file
+#include "abft_optweb.h" // relative to this file
 #include "Lib_xbar/Xbar_SR.h"
 
 typedef struct {
@@ -153,7 +153,7 @@ int main(int argc, char *argv[]) {
     }
 
     // send the matrix properties to the workers
-    MPI_Bcast(&matrix_properties, 4, MPI_INT, 0, MPI_COMM_WORLD);
+    OPTWEB_MPI_Bcast(&matrix_properties[0], 4, MPI_INT, 0, MPI_COMM_WORLD);
 
     // calculate the 1D-sizes of the matrices
     int size_a   = matrix_properties[0] * matrix_properties[1];
@@ -171,8 +171,9 @@ int main(int argc, char *argv[]) {
     //int resent = 0;
     
     // send 1D matrices to workers
-    MPI_Bcast_abft(m_a, size_a, 0, rank, num_worker); //, &resent);
-    MPI_Bcast_abft(m_b, size_b, 0, rank, num_worker); //, &resent); 
+    // MPI_Bcast(m_a, size_a , MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Bcast_abft_optweb(m_a, size_a, 0, rank, num_worker, 0);
+    MPI_Bcast_abft_optweb(m_b, size_b, 0, rank, num_worker, 0);
     
     // calculate the start- and endrow for worker  
     int startrow = rank * ( matrix_properties[0] / num_worker);
@@ -199,7 +200,7 @@ int main(int argc, char *argv[]) {
     free(m_b);
     
     /* collect the results */
-    MPI_Gather(result_matrix, number_of_rows, MPI_INT,
+    OPTWEB_MPI_Gather(result_matrix, number_of_rows, MPI_INT,
            final_matrix, number_of_rows,  MPI_INT, 0, MPI_COMM_WORLD);
 
     /** The master presents the results on the console */

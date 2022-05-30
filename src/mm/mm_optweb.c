@@ -170,7 +170,6 @@ int main(int argc, char *argv[]) {
     // send 1D matrices to workers
     MPI_Bcast(m_a, size_a , MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast(m_b, size_b , MPI_INT, 0, MPI_COMM_WORLD);
-
     
     // calculate the start- and endrow for worker  
     int startrow = rank * ( matrix_properties[0] / num_worker);
