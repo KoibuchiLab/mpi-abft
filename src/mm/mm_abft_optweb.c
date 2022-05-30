@@ -173,7 +173,7 @@ int main(int argc, char *argv[]) {
     // send 1D matrices to workers
     // MPI_Bcast(m_a, size_a , MPI_INT, 0, MPI_COMM_WORLD);
     MPI_Bcast_abft_optweb(m_a, size_a, 0, rank, num_worker, 0);
-    MPI_Bcast_abft_optweb(m_b, size_b, 0, rank, num_worker, 0);
+    MPI_Bcast_abft_optweb(m_b, size_b, 0, rank, num_worker, 1);
     
     // calculate the start- and endrow for worker  
     int startrow = rank * ( matrix_properties[0] / num_worker);

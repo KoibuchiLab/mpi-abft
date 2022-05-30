@@ -510,14 +510,14 @@ int hamming_decode(unsigned char* bits, char* c, int bytes, int r)
       // printf("no error\n");
       break;
     case 1:
-      printf("two-bit error\n");
+      printf("two-bit error (resent)\n");
       break;
     case 2:
-      printf("parity error\n");
+      printf("parity error (corrected)\n");
       c[r] = c[r] == '0'?'1':'0';
       break;
     case 3:
-      printf("one bit error: pos = %d\n", error_bit_pos);
+      printf("one bit error: pos = %d (corrected)\n", error_bit_pos);
       hamming_rectify_bit(bits, c, bytes, r, error_bit_pos);
       break;
     default:
