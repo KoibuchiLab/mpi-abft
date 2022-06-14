@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export PS1='[\u@\h \W]\$ '
+
+export I_MPI_LIBRARY_KIND=release_mt
+source /home/proj/atnw/honda/intel/oneapi/setvars.sh
+source /home/proj/atnw/honda/intel/oneapi/mkl/latest/env/vars.sh
+
+MPI_HOME=/home/proj/atnw/local/mpich-3.4.3
+#OMPI_HOME=/home/proj/atnw/honda/lib/ompi/4.0.7/gcc
+export PATH=${MPI_HOME}/bin:${PATH}
+export LD_LIBRARY_PATH=${MPI_HOME}/lib:${LD_LIBRARY_PATH}
+
