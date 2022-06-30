@@ -16,7 +16,7 @@
 
 #define MAX_ITERATIONS 1000
 #define CLUSTERS		10
-#define DATAFILE		"input.txt"
+// #define DATAFILE		"input.txt"
 
 int numOfClusters = 0;
 int numOfElements = 0;
@@ -91,8 +91,8 @@ void calcKmeans(unsigned int k_means_x[], unsigned int k_means_y[], unsigned int
 
 }
 
-// int main(int argc, char *argv[])
-int main(void)
+int main(int argc, char *argv[])
+// int main(void)
 {
 	// initialize the MPI environment
 	OPTWEB_MPI_Init(NULL, NULL);
@@ -120,12 +120,13 @@ int main(void)
 
 	if(world_rank == 0)
 	{
-		// if(argc != 2)
-		// {
-		// 	printf("Please include an argument after the program name to list how many processes.\n");
-		// 	printf("e.g. To indicate 4 processes, run: mpirun -n 4 ./kmeans 4\n");
-		// 	exit(-1);
-		// }
+		if(argc != 2)
+		{
+			// printf("Please include an argument after the program name to list how many processes.\n");
+			// printf("e.g. To indicate 4 processes, run: mpirun -n 4 ./kmeans 4\n");
+			printf("Please include an argument after the program name to show input file name.\n");
+			exit(-1);
+		}
 
 		// num_of_processes = atoi(argv[1]);
 		num_of_processes = world_size;
@@ -154,7 +155,8 @@ int main(void)
 
 		printf("Reading input data from file...\n\n");
 
-		char* filename_suffix = DATAFILE;
+		// char* filename_suffix = DATAFILE;
+		char* filename_suffix = argv[1];
 		FILE* fp = fopen(filename_suffix, "r");
 
 		if(!fp)
