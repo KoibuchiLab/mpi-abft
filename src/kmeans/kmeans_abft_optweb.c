@@ -14,8 +14,8 @@
 #include "abft_optweb.h" // relative to this file
 #include "Lib_xbar/Xbar_SR.h"
 
-#define MAX_ITERATIONS 1000
-#define CLUSTERS		10
+#define MAX_ITERATIONS	1000
+#define CLUSTERS		16
 // #define DATAFILE		"input.txt"
 
 int numOfClusters = 0;
@@ -294,8 +294,12 @@ int main(int argc, char *argv[])
 	while(count < MAX_ITERATIONS)
 	{
 		// broadcast k-means arrays
+		// MPI_Bcast(k_means_x, numOfClusters, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+		// MPI_Bcast(k_means_y, numOfClusters, MPI_DOUBLE, 0, MPI_COMM_WORLD);
 		// MPI_Bcast_abft(k_means_x, numOfClusters, 0, world_rank, world_size);
 		// MPI_Bcast_abft(k_means_y, numOfClusters, 0, world_rank, world_size);
+		// OPTWEB_MPI_Bcast(k_means_x, numOfClusters, MPI_INT, 0, MPI_COMM_WORLD);
+		// OPTWEB_MPI_Bcast(k_means_y, numOfClusters, MPI_INT, 0, MPI_COMM_WORLD);
 		MPI_Bcast_abft_optweb(k_means_x, numOfClusters, 0, world_rank, world_size, 1); 
 		MPI_Bcast_abft_optweb(k_means_y, numOfClusters, 0, world_rank, world_size, 1); 
 
