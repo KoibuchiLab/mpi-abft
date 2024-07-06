@@ -12,10 +12,6 @@
 #include <string.h>
 #include <stdint.h>
 
-#define MAX_ITERATIONS 1000
-#define CLUSTERS		100
-#define DATAFILE		"../../data/obs_info.txt"
-
 int numOfClusters = 0;
 int numOfElements = 0;
 int num_of_processes = 0;
@@ -91,6 +87,23 @@ void calcKmeans(double k_means_x[], double k_means_y[], double data_x_points[], 
 
 int main(int argc, char *argv[])
 {
+	int CLUSTERS = 100;
+	int MAX_ITERATIONS = 1000;
+	char* DATAFILE = "./data/obs_info.txt";
+
+	if(argc > 1) 
+	{
+		CLUSTERS = atoi(argv[1]);
+		if(argc > 2)
+		{
+			MAX_ITERATIONS = atoi(argv[2]);
+			if(argc > 3)
+			{
+				DATAFILE = argv[3];
+			}
+		}
+	}
+
 	// initialize the MPI environment
 	MPI_Init(NULL, NULL);
 
