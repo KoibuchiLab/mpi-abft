@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <malloc.h>
 #include <mpi.h>
 #include <string.h>
